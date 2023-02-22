@@ -20,9 +20,13 @@ const Footer = () => {
               </div>
               <div className='my-2 mx-4 flex text-footer-text items-center'>
                   <div className='flex justify-center items-center border border-accent mr-2 w-[35px] h-[35px]'>
-                    <HiEnvelope className='text-accent h-full w-full p-2' />
+                    <a href="mailto:bennetthumphrey98@gmail.com">
+                      <HiEnvelope className='text-accent h-full w-full p-2' />
+                    </a>
                   </div>
-                  <p>bennetthumphrey98<br/>@gmail.com</p>
+                  <a href="mailto:bennetthumphrey98@gmail.com">
+                    <p>bennetthumphrey98<br/>@gmail.com</p>
+                  </a>
               </div>
           </div>
           <div className='flex justify-center flex-col' >
@@ -44,7 +48,9 @@ const Footer = () => {
       <div className='text-gray-400 text-[0.7rem] py-6 px-4 bg-accent text-center' >
           <div className='flex flex-col mb-4' >
               <p>Website by Bennett Humphrey</p>
-              <p>bennetthumphrey98@gmail.com</p>
+              <a href="mailto:bennetthumphrey98@gmail.com">
+                <p>bennetthumphrey98@gmail.com</p>
+              </a>
           </div>
           <p>Some copyright company 2022</p>
       </div>

@@ -14,12 +14,12 @@ module.exports = {
       },
       extend: {
         colors: {
-          'main': 'hsla(10, 0%, 95%, 1)',
+          'main': '	#f2f2f2',
           'accent': '#606c94',
           'contact': 'red',
           'menu': '#123196',
-          'text': 'hsla(10, 0%, 20%, 1)',
-          'text-light': 'white',
+          'text': '#333333',
+          'text-light': '#f7f7f7',
           'dropdown': '#242D37',
           'line': 'black',
           'footer-bg': '#242D37',

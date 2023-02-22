@@ -4,31 +4,31 @@ import { CgGitFork } from "react-icons/cg"
 
 export const navOptions = [
     {
-        href: '/',
+        href: '/Third-Electrical-Site-React/',
         title: 'Home',
     },
     {
-        href: '../subPage/about',
+        href: '../Third-Electrical-Site-React/subPage/about',
         title: 'About Us',
     },
     {
-        href: '../subPage/residential',
+        href: '../Third-Electrical-Site-React/subPage/residential',
         title: 'Residential',
     },
     {
-        href: '../subPage/commercial',
+        href: '../Third-Electrical-Site-React/subPage/commercial',
         title: 'Commercial',
     },
     {
-        href: '../subPage/industrial',
+        href: '../Third-Electrical-Site-React/subPage/industrial',
         title: 'Industrial',
     },
     {
-        href: '../subPage/other',
+        href: '../Third-Electrical-Site-React/subPage/other',
         title: 'Other Services',
     },
     {
-        href: '../contact',
+        href: '../Third-Electrical-Site-React/contact',
         title: 'Contact Us',
     },
 ]
@@ -60,7 +60,7 @@ export const subPages = {
 export const whatWeDo = [
     {
         title: "Residential",
-        path: "residential",
+        path: "../Third-Electrical-Site-React/subPage/residential",
         icon: (<HiWrench className="text-white w-full h-full z-40 select-none pointer-events-none" />),
         list: [
             "Renovations", "Panel Upgrades", "New Construction", "Landscape Lighting", "Knob-and-Tube Replacement",
@@ -68,7 +68,7 @@ export const whatWeDo = [
     },
     {
         title: "Commercial",
-        path: "commercial",
+        path: "../Third-Electrical-Site-React/subPage/commercial",
         icon: (<HiBolt className="text-white w-full h-full z-40 select-none pointer-events-none" />),
         list: [
             "Data Wiring", "Security Systems", "Backup Generators", "Fire Alarm Systems", "Warehouse and Office Lighting",
@@ -76,7 +76,7 @@ export const whatWeDo = [
     },
     {
         title: "Industrial",
-        path: "industrial",
+        path: "../Third-Electrical-Site-React/subPage/industrial",
         icon: (<CgGitFork className="text-white w-full h-full z-40 select-none pointer-events-none" />),
         list: [
             "Switchboards", "600v Systems", "Motor Controls", "3-Phase Circuits", "Outdoor Lighting",

@@ -2,6 +2,7 @@ import React from 'react'
 import { aboutUs } from '../resources/data'
 
 const AboutUs = () => {
+  
   return (
     <div className='
     bg-[url(./resources/imgs/Office-Interior-600.webp)] 
