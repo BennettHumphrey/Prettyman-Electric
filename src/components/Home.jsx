@@ -5,6 +5,8 @@ import Header from './Header'
 import Nav from './Nav/Nav'
 import Reviews from './Reviews'
 import WhatWeDo from './WhatWeDo'
+import { reviews } from '../resources/data'
+
 
 const Home = () => {
   
@@ -14,7 +16,8 @@ const Home = () => {
         <Header  />
         <WhatWeDo  />
         <AboutUs  />
-        <Reviews  />
+        {reviews.length > 0 ?
+          <Reviews  /> : null}
         <Footer  />
     </>
   )

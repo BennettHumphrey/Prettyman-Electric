@@ -4,31 +4,31 @@ import { CgGitFork } from "react-icons/cg"
 
 export const navOptions = [
     {
-        href: '/Third-Electrical-Site-React/',
+        href: '/pioneer-electrical/',
         title: 'Home',
     },
     {
-        href: '../Third-Electrical-Site-React/subPage/about',
+        href: '../pioneer-electrical/subPage/about',
         title: 'About Us',
     },
     {
-        href: '../Third-Electrical-Site-React/subPage/residential',
+        href: '../pioneer-electrical/subPage/residential',
         title: 'Residential',
     },
     {
-        href: '../Third-Electrical-Site-React/subPage/commercial',
+        href: '../pioneer-electrical/subPage/commercial',
         title: 'Commercial',
     },
     {
-        href: '../Third-Electrical-Site-React/subPage/industrial',
+        href: '../pioneer-electrical/subPage/industrial',
         title: 'Industrial',
     },
     {
-        href: '../Third-Electrical-Site-React/subPage/other',
+        href: '../pioneer-electrical/subPage/other',
         title: 'Other Services',
     },
     {
-        href: '../Third-Electrical-Site-React/contact',
+        href: '../pioneer-electrical/contact',
         title: 'Contact Us',
     },
 ]
@@ -57,10 +57,38 @@ export const subPages = {
     },
 }
 
+export const headerSlides = [
+    {
+        //Return JSX for title & text so can change colors?
+        img: "./src/resources/imgs/Light-1200.webp",
+        svg: "",
+        href: '../pioneer-electrical/subPage/residential',
+        title: "RESI",
+        text: "Resi sample test blablabla",
+        active: true,
+    },
+    {
+        img: "./src/resources/imgs/Office-Interior-1200.webp",
+        svg: "",
+        href: '../pioneer-electrical/subPage/commercial',
+        title: "COMM",
+        text: "Comm sample test blablabla",
+        active: false,
+    },
+    {
+        img: "./src/resources/imgs/City-Skyline-1200.webp",
+        svg: "",
+        href: '../pioneer-electrical/subPage/industrial',
+        title: "INDU",
+        text: "Industrial sample text blablabla",
+        active: false,
+    },
+]
+
 export const whatWeDo = [
     {
         title: "Residential",
-        path: "../Third-Electrical-Site-React/subPage/residential",
+        path: "../pioneer-electrical/subPage/residential",
         icon: (<HiWrench className="text-white w-full h-full z-40 select-none pointer-events-none" />),
         list: [
             "Renovations", "Panel Upgrades", "New Construction", "Landscape Lighting", "Knob-and-Tube Replacement",
@@ -68,7 +96,7 @@ export const whatWeDo = [
     },
     {
         title: "Commercial",
-        path: "../Third-Electrical-Site-React/subPage/commercial",
+        path: "../pioneer-electrical/subPage/commercial",
         icon: (<HiBolt className="text-white w-full h-full z-40 select-none pointer-events-none" />),
         list: [
             "Data Wiring", "Security Systems", "Backup Generators", "Fire Alarm Systems", "Warehouse and Office Lighting",
@@ -76,7 +104,7 @@ export const whatWeDo = [
     },
     {
         title: "Industrial",
-        path: "../Third-Electrical-Site-React/subPage/industrial",
+        path: "../pioneer-electrical/subPage/industrial",
         icon: (<CgGitFork className="text-white w-full h-full z-40 select-none pointer-events-none" />),
         list: [
             "Switchboards", "600v Systems", "Motor Controls", "3-Phase Circuits", "Outdoor Lighting",

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { navOptions } from '../../resources/data'
-import { dropBtnStyles } from './NavStyles'
+import { dropBtnStyles } from './NavStyles' 
 
 const MobileNav = () => {
 
