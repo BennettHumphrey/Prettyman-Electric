@@ -1,4 +1,3 @@
--Adjustable size setting for Carousel.JSX
--Reviews section
--Footer section
+-Sticky nav
+-Projects section
 -Improve performance by not storing images in public?

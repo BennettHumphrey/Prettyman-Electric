@@ -1,29 +1,32 @@
 import React from 'react'
 import { reviews } from '../resources/data';
 import Carousel from './Carousel/Carousel';
+import reviewStyles from './Carousel/ReviewCarousel.module.css';
 
 
 const Reviews = () => {
 
-  // const carouselOptions = {
-  //   autoplay: true,
-  // }
+  const carouselOptions = {
+    autoplay: true,
+    autoplayDelay: 6,
+    line: false,
+  }
 
   return (
-    <div className='
-    bg-[url(./resources/imgs/City-Skyline-600.webp)] 
-    md:bg-[url(./resources/imgs/City-Skyline-900.webp)]
-    lg:bg-[url(./resources/imgs/City-Skyline-1200.webp)]
-    xl:bg-[url(./resources/imgs/City-Skyline-1800.webp)]
-    bg-cover bg-center h-[700px]' >
-      <div className='bg-[#00000080] h-full w-full z-10 pb-12' >
-        <svg className='text-main inline z-30 h-[30vw] w-full max-h-[150px]' xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path fill="currentColor" d="M0 0 L100 0 L100 2 L0 100 Z"></path>
-        </svg>
-        <h2 className='text-center text-2xl text-text-light m-8 pt-14' >Reviews</h2>
-        <div className='bg-white w-1/4 h-px m-auto mb-5' />
-         {/* <Carousel data={reviews} options={carouselOptions} /> */}
+    <div className='mb-8 bg-main' >
+      <h2 className='text-center text-2xl m-8 mt-0 pt-14' >
+      Reviews
+      </h2>
+      <div class="bg-line w-[30vw] h-px m-auto mb-8"/>
+      <div>
+        <Carousel data={reviews} options={carouselOptions} styles={reviewStyles} />
       </div>
+      <a href="" className='text-inherit'>
+        <button class="text-text-light bg-contact w-[85%] max-w-[600px]
+                          h-12 flex justify-center items-center my-12 mx-auto">
+        READ MORE REVIEWS ON REVIEW WEBSITE
+        </button>
+      </a>
     </div>
   )
 }

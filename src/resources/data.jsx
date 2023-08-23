@@ -72,7 +72,6 @@ export const headerSlides = [
         href: '../PioneerElectrical/subPage/industrial',
         title: "Lighting Design",
         text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
-        active: true,
     },
     {
         img: "./imgs/Office-Interior-1200.webp",
@@ -80,7 +79,6 @@ export const headerSlides = [
         href: '../PioneerElectrical/subPage/residential',
         title: "Residential Services",
         text: "Service upgrades, renovations, new construction, and more!",
-        active: false,
     },
     {
         img: "./imgs/City-Skyline-1200.webp",
@@ -88,7 +86,6 @@ export const headerSlides = [
         href: '../PioneerElectrical/subPage/commercial',
         title: "Commercial Services",
         text: "Data wiring, alarm systems, new construction, and much more!",
-        active: false,
     },
 ]
 
@@ -144,19 +141,31 @@ export const aboutUs = [
 
 export const reviews = [
     {
-    text: "I have an older condo, and needed some breakers and wires replaced, but two other electricians said the walls and floor aren't concrete so it couldn't be done.  But Mike is great, and he did the job well.  Professional, reliable, great value, and not afraid to do a more difficult task.",
-    name: "Sean Dayton",
+        text: "Sean Dayton",
+        img: "",
+        svg: "",
+        href: "",
+        title: "I have an older condo, and needed some breakers and wires replaced, but two other electricians said the walls and floor aren't concrete so it couldn't be done.  But Mike is great, and he did the job well.  Professional, reliable, great value, and not afraid to do a more difficult task.",
     },
     {
-    text: "Sean and team completely re-did the electrical in our apartment complex before upgrading us to a 400 amp service. The care, time, and expertise that Fake Electric brought to the jobsite was something that I have never seen before. Thanks to the Fake Electric for being true electrical professionals.",
-    name: "Mike Smith",
+        text: "Mike Smith",
+        img: "",
+        svg: "",
+        href: "",
+        title: "Sean and team completely re-did the electrical in our apartment complex before upgrading us to a 400 amp service. The care, time, and expertise that Fake Electric brought to the jobsite was something that I have never seen before. Thanks to the Fake Electric for being true electrical professionals.",
     },
     {
-    text: "The people at Fake Electric are capable of commercial and residential projects with a sharp focus on quality. Clean work and careful attention, along with a respectful and knowledgeable crew is what keeps us calling them back.",
-    name: "Pedro Gonzales",
+        text: "Pedro Gonzales",
+        img: "",
+        svg: "",
+        href: "",
+        title: "The people at Fake Electric are capable of commercial and residential projects with a sharp focus on quality. Clean work and careful attention, along with a respectful and knowledgeable crew is what keeps us calling them back.",
     },
     {
-    text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
-    name: "Sean Peters",
+        text: "Sean Peters",
+        img: "",
+        svg: "",
+        href: "",
+        title: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
     },
 ]

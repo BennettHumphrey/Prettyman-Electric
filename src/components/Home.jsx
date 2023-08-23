@@ -1,12 +1,13 @@
 import React from 'react'
 import AboutUs from './AboutUs'
-import Footer from './Footer'
+import AltFooter from './AltFooter'
 import Header from './Header'
 import Nav from './Nav/Nav'
 import Reviews from './Reviews'
 import { reviews } from '../resources/data'
 import PhoneNumbers from './PhoneNumbers'
 import RequestQuote from './RequestQuote'
+import Footer from './Footer'
 
 
 const Home = () => {
@@ -18,8 +19,9 @@ const Home = () => {
         <PhoneNumbers  />
         <AboutUs  />
         <RequestQuote  />
-        {/* <Reviews  /> */}
-        {/* <Footer  /> */}
+        <Reviews  />
+        <Footer  />
+        {/* <AltFooter  /> */}
     </>
   )
 }

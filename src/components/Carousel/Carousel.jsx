@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Carousel.module.css';
-import { headerSlides } from '../../resources/data';
 import { FaBolt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
-const Carousel = ({ data, options }) => {
+//Import styles from parent
+
+const Carousel = ({ data, options, styles }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [slideCounter, setSlideCounter] = useState(0);
 
@@ -32,13 +32,13 @@ const Carousel = ({ data, options }) => {
       
 
   const nextSlide = () => {
-    setActiveSlideIndex((prevIndex) => (prevIndex + 1) % headerSlides.length);
+    setActiveSlideIndex((prevIndex) => (prevIndex + 1) % data.length);
     setSlideCounter(0)
   };
 
   const prevSlide = () => {
     setActiveSlideIndex((prevIndex) =>
-      prevIndex === 0 ? headerSlides.length - 1 : prevIndex - 1
+      prevIndex === 0 ? data.length - 1 : prevIndex - 1
     );
     setSlideCounter(0)
   };
@@ -58,18 +58,20 @@ const Carousel = ({ data, options }) => {
             index === activeSlideIndex ? styles.slidesActive : styles.slidesInactive
           }`}
         >
-          <img className={`${styles.img}`} alt={slide.title} src={slide.img} />
+          {options.img && <img className={`${styles.img}`} alt={slide.title} src={slide.img} />}
           <div className={`${styles.overlay}`}>
             <div className={`${styles.icon}`} >
               {slide.svg}
             </div>
-            <h1>{slide.title}</h1>
-            <div className={`${styles.lines}`}>
-              <div className={`${styles.line}`} />
-              <FaBolt className={`${styles.linesIcon}`} />
-              <div className={`${styles.line}`} />
-            </div>
-            <p>{slide.text}</p>
+            <p className={`${styles.title}`} >{slide.title}</p>
+              {options.line && 
+                <div className={`${styles.lines}`}>
+                  <div className={`${styles.line}`} />
+                  <FaBolt className={`${styles.linesIcon}`} />
+                  <div className={`${styles.line}`} />
+                </div>
+              }
+            <p className={`${styles.text}`} >{slide.text}</p>
           </div>
         </Link>
       ))}
@@ -80,7 +82,7 @@ const Carousel = ({ data, options }) => {
         &#10094;
       </p>
       <div className={`${styles.dots}`}>
-        {headerSlides.map((x, index) => (
+        {data.map((x, index) => (
           <span
             key={index}
             className={`${styles.dot} ${
