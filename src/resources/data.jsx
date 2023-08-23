@@ -67,7 +67,7 @@ export const navOptions = [
 export const headerSlides = [
     {
         //Return JSX for title & text so can change colors?
-        img: "./src/resources/imgs/Light-1200.webp",
+        img: "./imgs/Light-1200.webp",
         svg: <HiOutlineLightBulb  />,
         href: '../PioneerElectrical/subPage/industrial',
         title: "Lighting Design",
@@ -75,7 +75,7 @@ export const headerSlides = [
         active: true,
     },
     {
-        img: "./src/resources/imgs/Office-Interior-1200.webp",
+        img: "./imgs/Office-Interior-1200.webp",
         svg: <FiSun />,
         href: '../PioneerElectrical/subPage/residential',
         title: "Residential Services",
@@ -83,7 +83,7 @@ export const headerSlides = [
         active: false,
     },
     {
-        img: "./src/resources/imgs/City-Skyline-1200.webp",
+        img: "./imgs/City-Skyline-1200.webp",
         svg: <FiWifi  />,
         href: '../PioneerElectrical/subPage/commercial',
         title: "Commercial Services",

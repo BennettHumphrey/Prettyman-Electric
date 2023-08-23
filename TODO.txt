@@ -1,4 +1,4 @@
--Adjustable size setting for Carousel.jsx
--About section
+-Adjustable size setting for Carousel.JSX
 -Reviews section
 -Footer section
+-Improve performance by not storing images in public?
