@@ -1,5 +1,4 @@
--Write new carousel
-    -2 objs
-            -1 for data
-            -1 for args (autoplay, etc)
--Write quick how-to for browser-dom
+-Adjustable size setting for Carousel.jsx
+-About section
+-Reviews section
+-Footer section

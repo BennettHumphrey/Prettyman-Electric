@@ -6,6 +6,7 @@ const Header = () => {
 
   const carouselOptions = {
       autoplay: true,
+      autoplayDelay: 6,
     }
 
   return (

@@ -9,18 +9,18 @@ import SubPage from './components/SubPage';
 
 const router = createBrowserRouter([
   {
-    path: "/Pioneer-Electrical/",
+    path: "/PioneerElectrical/",
     element: <Home  />,
   },
   {
-    path: "/Pioneer-Electrical/subPage/:subPageId",
+    path: "/PioneerElectrical/subPage/:subPageId",
     element: <SubPage  />,
     loader: ({params}) => {
       return subPages[params.subPageId];
     }
   },
   {
-    path: "/pioneer-electrical/contact",
+    path: "/pioneerElectrical/contact",
   element: <Contact  />
 },
 ]);

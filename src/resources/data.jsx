@@ -1,37 +1,10 @@
 import React from "react"
-import { HiBolt, HiWrench } from "react-icons/hi2"
-import { CgGitFork } from "react-icons/cg"
+import { FiSun, FiWifi } from "react-icons/fi";
+import { HiOutlineShieldCheck } from "react-icons/hi2";
+import { HiOutlineLightBulb } from "react-icons/hi2";
+import { IoCheckmark } from "react-icons/io5";
+import { FiPhoneCall } from "react-icons/fi";
 
-export const navOptions = [
-    {
-        href: '/pioneer-electrical/',
-        title: 'Home',
-    },
-    {
-        href: '../pioneer-electrical/subPage/about',
-        title: 'About Us',
-    },
-    {
-        href: '../pioneer-electrical/subPage/residential',
-        title: 'Residential',
-    },
-    {
-        href: '../pioneer-electrical/subPage/commercial',
-        title: 'Commercial',
-    },
-    {
-        href: '../pioneer-electrical/subPage/industrial',
-        title: 'Industrial',
-    },
-    {
-        href: '../pioneer-electrical/subPage/other',
-        title: 'Other Services',
-    },
-    {
-        href: '../pioneer-electrical/contact',
-        title: 'Contact Us',
-    },
-]
 
 
 export const subPages = {
@@ -57,82 +30,114 @@ export const subPages = {
     },
 }
 
+
+export const navOptions = [
+    {
+        href: '/PioneerElectrical/',
+        title: 'Home',
+    },
+    {
+        href: '../PioneerElectrical/subPage/about',
+        title: 'About Us',
+    },
+    {
+        href: '../PioneerElectrical/subPage/residential',
+        title: 'Residential',
+    },
+    {
+        href: '../PioneerElectrical/subPage/commercial',
+        title: 'Commercial',
+    },
+    {
+        href: '../PioneerElectrical/subPage/industrial',
+        title: 'Industrial',
+    },
+    {
+        href: '../PioneerElectrical/subPage/other',
+        title: 'Other Services',
+    },
+    {
+        href: '../PioneerElectrical/contact',
+        title: 'Contact Us',
+    },
+]
+
+
+
 export const headerSlides = [
     {
         //Return JSX for title & text so can change colors?
         img: "./src/resources/imgs/Light-1200.webp",
-        svg: "",
-        href: '../pioneer-electrical/subPage/residential',
-        title: "RESI",
-        text: "Resi sample test blablabla",
+        svg: <HiOutlineLightBulb  />,
+        href: '../PioneerElectrical/subPage/industrial',
+        title: "Lighting Design",
+        text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
         active: true,
     },
     {
         img: "./src/resources/imgs/Office-Interior-1200.webp",
-        svg: "",
-        href: '../pioneer-electrical/subPage/commercial',
-        title: "COMM",
-        text: "Comm sample test blablabla",
+        svg: <FiSun />,
+        href: '../PioneerElectrical/subPage/residential',
+        title: "Residential Services",
+        text: "Service upgrades, renovations, new construction, and more!",
         active: false,
     },
     {
         img: "./src/resources/imgs/City-Skyline-1200.webp",
-        svg: "",
-        href: '../pioneer-electrical/subPage/industrial',
-        title: "INDU",
-        text: "Industrial sample text blablabla",
+        svg: <FiWifi  />,
+        href: '../PioneerElectrical/subPage/commercial',
+        title: "Commercial Services",
+        text: "Data wiring, alarm systems, new construction, and much more!",
         active: false,
     },
 ]
 
-export const whatWeDo = [
+
+export const phoneNumbers = [
     {
-        title: "Residential",
-        path: "../pioneer-electrical/subPage/residential",
-        icon: (<HiWrench className="text-white w-full h-full z-40 select-none pointer-events-none" />),
-        list: [
-            "Renovations", "Panel Upgrades", "New Construction", "Landscape Lighting", "Knob-and-Tube Replacement",
-        ]
+        title: "Office Line",
+        text: "1.250.555.5555"
     },
     {
-        title: "Commercial",
-        path: "../pioneer-electrical/subPage/commercial",
-        icon: (<HiBolt className="text-white w-full h-full z-40 select-none pointer-events-none" />),
-        list: [
-            "Data Wiring", "Security Systems", "Backup Generators", "Fire Alarm Systems", "Warehouse and Office Lighting",
-        ]
+        title: "Emergency",
+        text: "1.250.555.5556"
     },
     {
-        title: "Industrial",
-        path: "../pioneer-electrical/subPage/industrial",
-        icon: (<CgGitFork className="text-white w-full h-full z-40 select-none pointer-events-none" />),
-        list: [
-            "Switchboards", "600v Systems", "Motor Controls", "3-Phase Circuits", "Outdoor Lighting",
-        ]
+        title: "Working Hours",
+        text: "9:00am - 6:00pm"
     },
 ]
 
+export const aboutUsMain = {
+    title: "Fake Electric, Electrician Services in Victoria",
+    text: "\
+        Since it began in 1980, Fake Electric has been known for its swift, attentive service,\
+        high-quality work, and competitive prices. Master Electrician Mark Smith has years of \
+        experience with electrical jobs from big to small — everything from replacing a single \
+        light to wiring an entire warehouse with a team. He is an expert in complex installations, \
+        electrical safety, and system upgrades. Fake Electric promises quality work and superb \
+        customer service for its residential and commercial clients — many who have been using us for years!",
+}
 
 export const aboutUs = [
+    // Animations in tailwind.config.cjs
     {
-        icon: (<CgGitFork className="m-auto relative top-2 w-12 h-12" />),
-        number: 212,
-        text: "Panel Replacements"
+        svg: <IoCheckmark className="h-20 w-20 text-text mx-auto group-hover:animate-checkmark-animation" />,
+        href: "../PioneerElectrical/contact",
+        title: "Quality Guarantee",
+        text: "Reliable service is what every customer gets when they have a Fake Electric electrician handling their electrical problems",
     },
     {
-        icon: (<CgGitFork className="m-auto relative top-2 w-12 h-12"  />),
-        number: 212,
-        text: "Panel Replacements"
+        svg: <FiPhoneCall className="h-20 w-20 pt-3 text-accent mx-auto group-hover:animate-phone-animation"  />,
+        href: "../PioneerElectrical/contact",
+        title: "24/7 Service",
+        text: "Our technicians are available 24/7 for any emergency calls, helping with all that life can throw at you",
     },
     {
-        icon: (<CgGitFork className="m-auto relative top-2 w-12 h-12"  />),
-        number: 212,
-        text: "Panel Replacements"
-    },
-    {
-        icon: (<CgGitFork className="m-auto relative top-2 w-12 h-12"  />),
-        number: 212,
-        text: "Panel Replacements"
+        svg: <HiOutlineShieldCheck className="h-20 w-20 text-text mx-auto group-hover:animate-shield-animation"  />,
+        href: "../PioneerElectrical/contact",
+        title: "Insured, Bonded, Licensed",
+        text: "Our electricians are fully licensed, with fully equiped vans to help with all your electrical needs",
     },
 ]
 

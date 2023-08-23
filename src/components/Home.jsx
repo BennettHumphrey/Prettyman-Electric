@@ -4,8 +4,9 @@ import Footer from './Footer'
 import Header from './Header'
 import Nav from './Nav/Nav'
 import Reviews from './Reviews'
-import WhatWeDo from './WhatWeDo'
 import { reviews } from '../resources/data'
+import PhoneNumbers from './PhoneNumbers'
+import RequestQuote from './RequestQuote'
 
 
 const Home = () => {
@@ -14,11 +15,11 @@ const Home = () => {
     <>
         <Nav  />
         <Header  />
-        <WhatWeDo  />
+        <PhoneNumbers  />
         <AboutUs  />
-        {reviews.length > 0 ?
-          <Reviews  /> : null}
-        <Footer  />
+        <RequestQuote  />
+        {/* <Reviews  /> */}
+        {/* <Footer  /> */}
     </>
   )
 }

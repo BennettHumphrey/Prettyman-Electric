@@ -18,7 +18,7 @@ module.exports = {
           'accent': '#ffaa06',
           'contact': 'red',
           'menu': '#123196',
-          'text': 'hsla(10, 0%, 20%, 1)',
+          'text': '#333645',
           'text-light': 'white',
           'dropdown': '#242D37',
           'line': 'black',
@@ -27,7 +27,31 @@ module.exports = {
         },
         height: {
           'screen-width': '100vw'
-        }
+        },
+        keyframes: {
+        'checkmark': {
+          '0%': {},
+          '50%': { transform: 'scale(1.3)' },
+          '100%': { transform: 'scale(1)' },
+          },
+          'phone': {
+            '0%': { transform: 'scale(1)' },
+            '25%': { transform: 'rotate(-3deg) translateY(1px)' },
+            '50%': { transform: 'rotate(3deg) translateY(-1px)' },
+            '75%': { transform: 'rotate(3deg) translateY(-1px)' },
+            '100%': { transform: 'rotate(-3deg) translateY(1px)' },
+          },
+          'shield': {
+            '0%': {},
+            '40%': { color: '#ffaa06' },
+            '100%': { color: 'inherit' },
+          },
+        },
+    },
+    animation: {
+      'checkmark-animation': 'checkmark 1.4s infinite',
+      'phone-animation': 'phone 0.5s infinite',
+      'shield-animation': 'shield 1.5s infinite',
     },
 },
   plugins: [],
