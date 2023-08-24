@@ -8,25 +8,29 @@ import { FiPhoneCall } from "react-icons/fi";
 
 
 export const subPages = {
-    about: {
-        title: "About Us",
-        text: "Since it began in 1980 Fake Electric has been known for its swift, attentive service, high-quality work, and competitive prices. Master Electrician Mark Smith has years of experience with electrical jobs from big to small — everything from replacing a single light to wiring an entire warehouse with a team. He is an expert in complex installations, electrical safety, and system upgrades. Fake Electric promises quality work and superb customer service for its residential and commercial clients — many who have been using us for years!",
-    },
     residential: {
-        title: "Residential Electrician in Victoria",
-        text: "First and foremost, at Fake Electric we value our clients. We always take the time to explain our services in detail, and what the job will entail. We will treat your home like it is ours, and leave it in a better state than we found it. Fake Electric proudly offers electrical consultations for every new prospective renovation or construction. During these consultations, Fake Electric's professional electricians will identify any and all hazards in your home, and make recommendations on how to remedy them. Fake Electric also provides a competitive quote for affordable electrical upgrades and repairs.",
+        headerTitle: "Residential Electrician Services in Victoria",
+        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
+        bodyTitle: "Residential Services Include",
+        bodyText: "First and foremost, at Fake Electric we value our clients. We always take the time to explain our services in detail, and what the job will entail. We will treat your home like it is ours, and leave it in a better state than we found it. Fake Electric proudly offers electrical consultations for every new prospective renovation or construction. During these consultations, Fake Electric's professional electricians will identify any and all hazards in your home, and make recommendations on how to remedy them. Fake Electric also provides a competitive quote for affordable electrical upgrades and repairs.",
     },
     commercial: {
-        title: "Commercial Electrician in Victoria",
-        text: "Commercial buildings and establishments are subject to their own set of design requirements. Such buildings include medical offices, restaurants, hotels, warehouses, and retail stores. With its over 40 years of experience, Fake Electric is uniquely positioned to serve our clients with any and all of their repair or installation needs.",
+        headerTitle: "Commercial Electrician in Victoria",
+        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
+        bodyTitle: "Commercial Services",
+        bodyText: "Commercial buildings and establishments are subject to their own set of design requirements. Such buildings include medical offices, restaurants, hotels, warehouses, and retail stores. With its over 40 years of experience, Fake Electric is uniquely positioned to serve our clients with any and all of their repair or installation needs.",
     },
     industrial: {
-        title: "Industrial Electrician in Victoria",
-        text: "Industrial electrical upgrades providing energy improvements will significantly decrease utility costs, and save a large part of your operating budget. Factories use a massive amount of energy. Research shows that manufacturing plants consume more than 1,000 times as much power as other industries. This level of consumption provides quick payback periods for electrical improvement costs. Electrical upgrades also add to the value of a facility with an average increased asset value of three dollars for every dollar spent.",
+        headerTitle: "Industrial Electrician in Victoria",
+        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
+        bodyTitle: "Industrial Services",
+        bodyText: "Industrial electrical upgrades providing energy improvements will significantly decrease utility costs, and save a large part of your operating budget. Factories use a massive amount of energy. Research shows that manufacturing plants consume more than 1,000 times as much power as other industries. This level of consumption provides quick payback periods for electrical improvement costs. Electrical upgrades also add to the value of a facility with an average increased asset value of three dollars for every dollar spent.",
     },
-    other: {
-        title: "Our Other Electrical Services",
-        text: "Our team at Fake Electric has many years of experience in many different types of projects, so if you need something done that doesn't fit into any simple categories, give us a call! We have experience with EV chargers, vault maintenance, preventative maintanence programs, and much much more!",
+    lighting: {
+        headerTitle: "Lighting Services in Victoria",
+        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
+        bodyTitle: "Quality Service and Installation",
+        bodyText: "In today's modern houses, lighting systems are becoming more and more integrated and complex. Our electricians have a wealth of experience, knowledge, and commitment to staying up-to-date with the latest technology. You can always be assured of qualified, competent electricians attending your needs. Regardless of the complexity or size of your project, the professionals at Fake Electric will do it right the first time!",
     },
 }
 
@@ -35,10 +39,6 @@ export const navOptions = [
     {
         href: '/PioneerElectrical/',
         title: 'Home',
-    },
-    {
-        href: '../PioneerElectrical/subPage/about',
-        title: 'About Us',
     },
     {
         href: '../PioneerElectrical/subPage/residential',
@@ -53,8 +53,8 @@ export const navOptions = [
         title: 'Industrial',
     },
     {
-        href: '../PioneerElectrical/subPage/other',
-        title: 'Other Services',
+        href: '../PioneerElectrical/subPage/lighting',
+        title: 'Lighting Design',
     },
     {
         href: '../PioneerElectrical/contact',

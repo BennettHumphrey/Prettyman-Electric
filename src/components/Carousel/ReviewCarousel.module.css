@@ -80,9 +80,13 @@
     display: flex;
     flex-direction: row;
   }
+
+  .overlay {
+    gap: 1rem;
+  }
 }
 
-@media only screen and (min-width: 1000px) {
+/* @media only screen and (min-width: 1000px) {
   .link {
     font-size: 1.1rem;
     line-height: 2.6;
@@ -103,7 +107,7 @@
     font-size: 1.3rem;
     line-height: 2.2;
   }
-}
+} */
 
 .img {
   position: absolute;
@@ -115,9 +119,8 @@
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
   color: orange;
   font-weight: bold;

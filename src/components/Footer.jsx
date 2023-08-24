@@ -69,7 +69,10 @@ const Footer = () => {
         </div>
         <div className='text-center leading-[1.2] bg-footer-bg pb-6 pt-[3.2rem]' >
           <p className='text-footer-text' >Website developed by Bennett Humphrey</p>
-          <p className='text-footer-text' >bennetthumphrey98@gmail.com</p>
+          <a href='https://bennetthumphrey.com/' target='blank' 
+            className='text-footer-text duration-500 hover:text-accent' >
+              Bennetthumphrey.com
+            </a>
         </div>
     </div>
   )
