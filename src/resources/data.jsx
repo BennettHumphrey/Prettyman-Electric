@@ -32,6 +32,11 @@ export const subPages = {
         bodyTitle: "Quality Service and Installation",
         bodyText: "In today's modern houses, lighting systems are becoming more and more integrated and complex. Our electricians have a wealth of experience, knowledge, and commitment to staying up-to-date with the latest technology. You can always be assured of qualified, competent electricians attending your needs. Regardless of the complexity or size of your project, the professionals at Fake Electric will do it right the first time!",
     },
+    contact: {
+        headerTitle: "Hire an Electrician in Victoria",
+        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
+
+    }
 }
 
 

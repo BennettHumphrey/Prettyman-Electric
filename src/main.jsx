@@ -2,10 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home';
-import Contact from './components/Contact'
+import AltContact from './components/AltContact'
 import { subPages } from './resources/data';
 import './index.css'
 import SubPage from './components/SubPage';
+import Contact from './components/Contact';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/pioneerElectrical/contact",
+  // element: <AltContact  />
   element: <Contact  />
 },
 ]);

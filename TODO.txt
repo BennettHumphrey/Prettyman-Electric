@@ -1,3 +1,6 @@
 -Sticky nav
+-Partner logos not showing in footer
+-Contact subPage
+-Main logo not showing, and not clickable
 -Projects section
 -Improve performance by not storing images in public?
