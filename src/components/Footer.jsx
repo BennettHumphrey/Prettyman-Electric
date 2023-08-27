@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
 
     const scrollToTop = () => {
-        const scroll = () => window.scrollTo({
+        const scroll = () => {window.scrollTo({
             top: "-999px",
             behavior: 'smooth'
-        });
+        })};
         return setInterval(scroll, 500);
     };
 
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           <div className="semi-footer-menu">
             <h4 className='my-8 mx-4 text-[1.75rem] text-text-light'>Our Services</h4>
-            <ul onClick={scrollToTop()}>
+            <ul onClick={scrollToTop}>
               {navOptions.map((data, i) => (
                 <li key={i}
                     className='w-[70%] text-center m-auto group hover:cursor-pointer

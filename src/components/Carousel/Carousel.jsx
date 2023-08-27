@@ -48,9 +48,30 @@ const Carousel = ({ data, options, styles }) => {
       setSlideCounter(0)
   };
 
+//   <div className={`${styles.slides} ${styles.fade} ${
+//     index === activeSlideIndex ? styles.slidesActive : styles.slidesInactive
+//   }`}
+//   key={index}>
+//   <img className={`${styles.img}`} alt={slide.title} src={slide[0]} />
+// </div>
+
   return (
+
     <div className={`${styles.slideshowContainer}`}>
-      {data.map((slide, index) => (
+      {  options.onlyImgs ? 
+      //If there are only images
+      data.map((slide, index) => (
+        <div
+          key={index}
+          className={`${styles.slides} ${styles.fade} ${
+            index === activeSlideIndex ? styles.slidesActive : styles.slidesInactive
+          }`}
+        >
+          <img className={`${styles.img}`} alt={slide.title} src={slide} />
+        </div>
+      ))
+      //If there is a full data obj
+      : data.map((slide, index) => (
         <Link
           to={slide.href}
           key={index}

@@ -7,6 +7,7 @@ import { subPages } from './resources/data';
 import './index.css'
 import SubPage from './components/SubPage';
 import Contact from './components/Contact';
+import Projects from './components/Projects/Projects';
 
 const router = createBrowserRouter([
   {
@@ -22,9 +23,13 @@ const router = createBrowserRouter([
   },
   {
     path: "/pioneerElectrical/contact",
-  // element: <AltContact  />
-  element: <Contact  />
-},
+    // element: <AltContact  />
+    element: <Contact  />
+  },
+  {
+    path: "/pioneerElectrical/projects",
+    element: <Projects  />
+  },
 ]);
 
 

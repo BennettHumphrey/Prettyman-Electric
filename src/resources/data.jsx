@@ -35,8 +35,11 @@ export const subPages = {
     contact: {
         headerTitle: "Hire an Electrician in Victoria",
         headerText: "Providing affordable electrical services in the beautiful city of Victoria",
-
-    }
+    },
+    projects: {
+        headerTitle: "Our Projects",
+        headerText: "A small selection of our projects",
+    },
 }
 
 
@@ -64,6 +67,10 @@ export const navOptions = [
     {
         href: '../PioneerElectrical/contact',
         title: 'Contact Us',
+    },
+    {
+        href: '../PioneerElectrical/projects',
+        title: 'Projects',
     },
 ]
 
@@ -172,5 +179,37 @@ export const reviews = [
         svg: "",
         href: "",
         title: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
+    },
+]
+
+
+export const projects = [
+    {
+        img: ["./imgs/City-Skyline-1200.webp", "./imgs/Light-1200.webp"],
+        title: "TEST1",
+        location: "Two Images",
+        text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
+    },
+    {
+        img: ["./imgs/Office-Interior-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp"],
+        title: "TEST2",
+        location: "Three Images",
+        text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
+    },
+    {
+        img: ["./imgs/Light-1200.webp"],
+        title: "TEST3",
+        location: "One Image",
+        text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
+    },
+    {
+        img: [
+            "./imgs/artistic-scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
+            "./imgs/artistic-scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
+            "./imgs/artistic-scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
+            ],
+        title: "TEST4",
+        location: "Nine Images",
+        text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
     },
 ]

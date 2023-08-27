@@ -1,6 +1,5 @@
--Sticky nav
 -Partner logos not showing in footer
--Contact subPage
 -Main logo not showing, and not clickable
--Projects section
+-Footer error message / scroll-to-top (in func?)
 -Improve performance by not storing images in public?
+-Remove unnecessary classes in Carousel css files (lots in ProjectCarousel)

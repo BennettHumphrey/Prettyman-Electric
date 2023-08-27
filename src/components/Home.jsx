@@ -8,12 +8,13 @@ import { reviews } from '../resources/data'
 import PhoneNumbers from './PhoneNumbers'
 import RequestQuote from './RequestQuote'
 import Footer from './Footer'
+import Modal from './Projects/Modal'
 
 
 const Home = () => {
   
   return (
-    <>
+    <div>
         <Nav  />
         <Header  />
         <PhoneNumbers  />
@@ -22,7 +23,7 @@ const Home = () => {
         <Reviews  />
         <Footer  />
         {/* <AltFooter  /> */}
-    </>
+    </div>
   )
 }
 
