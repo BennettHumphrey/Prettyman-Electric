@@ -1,5 +1,1 @@
--Partner logos not showing in footer
--Main logo not showing, and not clickable
--Footer error message / scroll-to-top (in func?)
 -Improve performance by not storing images in public?
--Remove unnecessary classes in Carousel css files (lots in ProjectCarousel)

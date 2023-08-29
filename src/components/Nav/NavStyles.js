@@ -15,7 +15,7 @@ export const dropBtnStyles = {
     bars: {
         width: "35px",
         height: "5px",
-        backgroundColor: "#606c94",
+        backgroundColor: "orange",
         margin: "6px auto",
         pointerEvents: "none"
     },

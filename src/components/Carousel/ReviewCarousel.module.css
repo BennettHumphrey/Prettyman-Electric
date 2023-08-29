@@ -49,65 +49,11 @@
   margin: auto;
 }
 
-.icon > * {
-  width: 10vw;
-  height: 10vw;
-  color: var(--text-color-light);
-  position: relative;
-  top: 10px;
-}
-
-.lines {
-  display: flex;
-  flex-direction: row;
-}
-
-.line {
-  background-color: var(--accent-color);
-  height: 0.3vw;
-  width: 9vw;
-  margin-inline: 2vw;
-}
-
-.linesIcon {
-  width: 3vw;
-  height: 3vw;
-  color: var(--accent-color);
-}
-
 @media only screen and (min-width: 600px) {
-  .lines {
-    display: flex;
-    flex-direction: row;
-  }
-
   .overlay {
     gap: 1rem;
   }
 }
-
-/* @media only screen and (min-width: 1000px) {
-  .link {
-    font-size: 1.1rem;
-    line-height: 2.6;
-  }
-  
-  .slideshowContainer {
-    height: 50vw;
-  }
-
-  .overlay {
-    top: 5vw;
-    gap: 4.2vw
-  }
-}
-
-@media only screen and (min-width: 1150px) {
-  .link {
-    font-size: 1.3rem;
-    line-height: 2.2;
-  }
-} */
 
 .img {
   position: absolute;

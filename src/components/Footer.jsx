@@ -1,16 +1,8 @@
-import React from 'react'
-import { navOptions } from '../resources/data'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { navOptions } from '../resources/data';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
-
-    const scrollToTop = () => {
-        const scroll = () => {window.scrollTo({
-            top: "-999px",
-            behavior: 'smooth'
-        })};
-        return setInterval(scroll, 500);
-    };
 
   return (
     <div>
@@ -31,7 +23,7 @@ const Footer = () => {
           </div>
           <div className="semi-footer-menu">
             <h4 className='my-8 mx-4 text-[1.75rem] text-text-light'>Our Services</h4>
-            <ul onClick={scrollToTop}>
+            <ul>
               {navOptions.map((data, i) => (
                 <li key={i}
                     className='w-[70%] text-center m-auto group hover:cursor-pointer
@@ -49,19 +41,19 @@ const Footer = () => {
             <div className="grid grid-rows-[150px_150px] grid-cols-[100px_100px]
                             justify-center justify-items-center gap-4">
               <figure>
-                <img className='w-24 h-24' src="/imgs/partner-logo.svg" alt="Logo"/>
+                <img className='w-24 h-24' src="./imgs/partner-logo.svg" alt="Logo"/>
                 <figcaption>Seal of Approval</figcaption>
               </figure>
               <figure>
-                <img className='w-24 h-24' src="/imgs/partner-logo.svg" alt="Logo"/>
+                <img className='w-24 h-24' src="./imgs/partner-logo.svg" alt="Logo"/>
                 <figcaption>Seal of Approval</figcaption>
               </figure>
               <figure>
-                <img className='w-24 h-24' src="/imgs/partner-logo.svg" alt="Logo"/>
+                <img className='w-24 h-24' src="./imgs/partner-logo.svg" alt="Logo"/>
                 <figcaption>Partner Logo</figcaption>
               </figure>
               <figure>
-                <img className='w-24 h-24' src="/imgs/partner-logo.svg" alt="Logo"/>
+                <img className='w-24 h-24' src="./imgs/partner-logo.svg" alt="Logo"/>
                 <figcaption>Partner Logo</figcaption>
               </figure>
             </div>

@@ -5,6 +5,19 @@ import { HiOutlineLightBulb } from "react-icons/hi2";
 import { IoCheckmark } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
 
+//Contents
+
+// subPages 23
+// navOptions 59
+// headerSlides 92
+// phoneNumbers 118
+// aboutUsMain 133
+// aboutUs 144
+// reviews 167
+// projects 199
+
+
+
 
 
 export const subPages = {
@@ -49,19 +62,19 @@ export const navOptions = [
         title: 'Home',
     },
     {
-        href: '../PioneerElectrical/subPage/residential',
+        href: '../PioneerElectrical/residential',
         title: 'Residential',
     },
     {
-        href: '../PioneerElectrical/subPage/commercial',
+        href: '../PioneerElectrical/commercial',
         title: 'Commercial',
     },
     {
-        href: '../PioneerElectrical/subPage/industrial',
+        href: '../PioneerElectrical/industrial',
         title: 'Industrial',
     },
     {
-        href: '../PioneerElectrical/subPage/lighting',
+        href: '../PioneerElectrical/lighting',
         title: 'Lighting Design',
     },
     {

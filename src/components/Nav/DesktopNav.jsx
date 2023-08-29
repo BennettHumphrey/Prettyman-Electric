@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 const DesktopNav = () => {
   return (
     <div className='sticky bg-main z-10 flex justify-evenly h-12 text-xl' >
-        <Link to="/">
+        <Link to="/PioneerElectrical/">
             <img 
-            src="../../company-logo.png" 
+            src="./company-logo.png" 
             height="50px"
             width="50px" 
-            className="h-10 w-10 mt-1" 
+            className="h-10 w-10 mt-1 ml-2" 
             alt="company-logo"/>
         </Link>
         {navOptions.map((o, i) => (

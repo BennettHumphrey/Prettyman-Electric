@@ -5,9 +5,8 @@ import Nav from './Nav/Nav';
 import ReviewsButton from './ReviewsButton';
 import SubPageHeader from './SubPageHeader';
 
-const SubPage = () => {
-
-    const data = useLoaderData();
+const SubPage = ({data}) => {
+    
 
   return (
     <div className='bg-main' >
@@ -28,7 +27,7 @@ const SubPage = () => {
               <div className="flex justify-center flex-col
                               sm:mr-[5vw] lg:mr-[10vw]">
                 <img className="relative w-[100px] h-[100px] m-auto mt-12" 
-                    src="/imgs/partner-logo.svg" alt="Cat"/>
+                    src="./imgs/partner-logo.svg" alt="Cat"/>
                 <figcaption className='text-center'>
                   Seal of Approval
                 </figcaption>

@@ -8,6 +8,7 @@ import './index.css'
 import SubPage from './components/SubPage';
 import Contact from './components/Contact';
 import Projects from './components/Projects/Projects';
+import App from './components/App';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     element: <Home  />,
   },
   {
-    path: "/PioneerElectrical/subPage/:subPageId",
+    path: "/PioneerElectrical/:subPageId",
     element: <SubPage  />,
     loader: ({params}) => {
       return subPages[params.subPageId];
@@ -35,6 +36,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <App />
   </React.StrictMode>,
 )
