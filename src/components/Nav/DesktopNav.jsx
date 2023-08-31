@@ -10,11 +10,13 @@ const DesktopNav = () => {
             src="./company-logo.png" 
             height="50px"
             width="50px" 
-            className="h-10 w-10 mt-1 ml-2" 
+            className="h-10 w-10 mt-1" 
             alt="company-logo"/>
         </Link>
         {navOptions.map((o, i) => (
-                    <Link key={i} className='h-full flex items-center px-6 duration-500 hover:bg-menu hover:text-text-light active:bg-menu active:text-text-light active:duration-0' 
+                    <Link key={i} className='h-full flex items-center px-6 duration-500 hover:bg-menu hover:text-text-light 
+                                          active:bg-menu active:text-text-light active:duration-0
+                                            lg:px-[1.16rem]' 
                         to={o.href}>
                         <p>{o.title}</p>
                     </Link>
