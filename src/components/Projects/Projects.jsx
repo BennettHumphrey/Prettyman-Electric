@@ -14,12 +14,6 @@ const Projects = () => {
     <div className='bg-main' >
         <Nav  />
         <SubPageHeader data={subPages.projects} />
-        {/* {modalOpen.open ? <Modal setModalOpen={setModalOpen} /> : null} */}
-        {/* <div onClick={() => setModalOpen(true)}
-        className='bg-accent m-auto w-[10vw] text-center py-1 px-2 rounded-md mb-2
-                    duration-500 hover:bg-[#ffd68f] hover:cursor-pointer' >
-                Modal
-        </div> */}
         <div className='flex flex-wrap justify-center items-center gap-3
                         max-w-[950px] m-auto py-8 px-6 sm:gap-6' >
           {projects.map((data, i) => (

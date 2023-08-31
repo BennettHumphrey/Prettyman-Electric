@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <div>
       <div className="z-20 text-center">
-        <div className="bg-[url(/imgs/artistic-scaffolding-1200.webp)]
+        <div className="bg-[url(/imgs/Artistic-Scaffolding-1200.webp)]
                         bg-fixed bg-[left_0px_top_0px] bg-cover z-0">
           <div className="bg-[#ffffffB3]
                           h-full w-full z-10">

@@ -19,7 +19,7 @@ const Modal = ( { setModalOpen, data } ) => {
 
     <div  
         onClick={(e) => {setModalOpen(false); e.stopPropagation()}}
-        className='absolute left-0 top-0 w-[100vw] h-[100vh] bg-[#0009] z-50
+        className='fixed left-0 top-0 w-[100vw] h-[100vh] bg-[#0004] z-50
                     flex justify-center'>
         <div 
             onClick={(e) => {e.stopPropagation()}}
@@ -27,8 +27,9 @@ const Modal = ( { setModalOpen, data } ) => {
                         w-[90vw] max-w-[500px] h-[80vh] top-[110px]'>
             {data.img.length > 1 ? 
             <Carousel styles={projectCarousel} data={data.img} options={carouselOptions} /> 
-            : <img src='/imgs/City-Skyline-1200.webp'
+            : <img src={data.img}
                 className='p-3 max-h-[55vh]' />}
+
             <h3 className='text-text px-3 leading-tight' >
                 {data.title}
             </h3>
