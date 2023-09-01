@@ -28,7 +28,7 @@ const Wrapper = ({children}) => {
           <Route path="/PioneerElectrical/residential" element={<SubPage data={subPages.residential} />} />
           <Route path="/PioneerElectrical/commercial" element={<SubPage data={subPages.commercial} />} />
           <Route path="/PioneerElectrical/industrial" element={<SubPage data={subPages.industrial} />} />
-          <Route path="/PioneerElectrical/lighting" element={<SubPage data={subPages.lighting} />} />
+          <Route path="/PioneerElectrical/legal" element={<SubPage data={subPages.legal} />} />
           <Route path="/PioneerElectrical/contact" element={<Contact />} />
           <Route path="/PioneerElectrical/projects" element={<Projects />} />
         </Routes>

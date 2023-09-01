@@ -16,6 +16,8 @@ module.exports = {
         colors: {
           'main': 'hsla(10, 0%, 95%, 1)',
           'accent': '#ffaa06',
+          // Logo colour
+          // 'accent': '#f7941d',
           'contact': 'red',
           'menu': '#123196',
           'text': '#333645',

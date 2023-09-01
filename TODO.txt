@@ -1,1 +1,4 @@
--Improve performance by not storing images in public?
+	- Cut Lighting Design, replace with Gov section
+        - Will have different info and slightly different layout
+            - Make new component
+	- Review site links in footer instead of social media links

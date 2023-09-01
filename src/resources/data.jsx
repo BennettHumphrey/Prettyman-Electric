@@ -26,32 +26,38 @@ export const subPages = {
         headerText: "Providing affordable electrical services in the beautiful city of Victoria",
         bodyTitle: "Residential Services Include",
         bodyText: "First and foremost, at Fake Electric we value our clients. We always take the time to explain our services in detail, and what the job will entail. We will treat your home like it is ours, and leave it in a better state than we found it. Fake Electric proudly offers electrical consultations for every new prospective renovation or construction. During these consultations, Fake Electric's professional electricians will identify any and all hazards in your home, and make recommendations on how to remedy them. Fake Electric also provides a competitive quote for affordable electrical upgrades and repairs.",
+        seal: false,
     },
     commercial: {
         headerTitle: "Commercial Electrician in Victoria",
         headerText: "Providing affordable electrical services in the beautiful city of Victoria",
         bodyTitle: "Commercial Services",
         bodyText: "Commercial buildings and establishments are subject to their own set of design requirements. Such buildings include medical offices, restaurants, hotels, warehouses, and retail stores. With its over 40 years of experience, Fake Electric is uniquely positioned to serve our clients with any and all of their repair or installation needs.",
+        seal: true,
     },
     industrial: {
         headerTitle: "Industrial Electrician in Victoria",
         headerText: "Providing affordable electrical services in the beautiful city of Victoria",
         bodyTitle: "Industrial Services",
         bodyText: "Industrial electrical upgrades providing energy improvements will significantly decrease utility costs, and save a large part of your operating budget. Factories use a massive amount of energy. Research shows that manufacturing plants consume more than 1,000 times as much power as other industries. This level of consumption provides quick payback periods for electrical improvement costs. Electrical upgrades also add to the value of a facility with an average increased asset value of three dollars for every dollar spent.",
+        seal: true,
     },
-    lighting: {
+    legal: {
         headerTitle: "Lighting Services in Victoria",
         headerText: "Providing affordable electrical services in the beautiful city of Victoria",
         bodyTitle: "Quality Service and Installation",
         bodyText: "In today's modern houses, lighting systems are becoming more and more integrated and complex. Our electricians have a wealth of experience, knowledge, and commitment to staying up-to-date with the latest technology. You can always be assured of qualified, competent electricians attending your needs. Regardless of the complexity or size of your project, the professionals at Fake Electric will do it right the first time!",
+        seal: true,
     },
     contact: {
         headerTitle: "Hire an Electrician in Victoria",
         headerText: "Providing affordable electrical services in the beautiful city of Victoria",
+        // seal: true,
     },
     projects: {
         headerTitle: "Our Projects",
         headerText: "A small selection of our projects",
+        // seal: true,
     },
 }
 
@@ -74,8 +80,8 @@ export const navOptions = [
         title: 'Industrial',
     },
     {
-        href: '../PioneerElectrical/lighting',
-        title: 'Lighting Design',
+        href: '../PioneerElectrical/legal',
+        title: 'Legal Certifications',
     },
     {
         href: '../PioneerElectrical/contact',
@@ -94,21 +100,21 @@ export const headerSlides = [
         //Return JSX for title & text so can change colors?
         img: "./imgs/Light-1200.webp",
         svg: <HiOutlineLightBulb  />,
-        href: '../PioneerElectrical/subPage/industrial',
+        href: '../PioneerElectrical/industrial',
         title: "Lighting Design",
         text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
     },
     {
         img: "./imgs/Office-Interior-1200.webp",
         svg: <FiSun />,
-        href: '../PioneerElectrical/subPage/residential',
+        href: '../PioneerElectrical/residential',
         title: "Residential Services",
         text: "Service upgrades, renovations, new construction, and more!",
     },
     {
         img: "./imgs/City-Skyline-1200.webp",
         svg: <FiWifi  />,
-        href: '../PioneerElectrical/subPage/commercial',
+        href: '../PioneerElectrical/commercial',
         title: "Commercial Services",
         text: "Data wiring, alarm systems, new construction, and much more!",
     },

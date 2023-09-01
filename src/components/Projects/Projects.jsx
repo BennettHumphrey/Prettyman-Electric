@@ -21,9 +21,10 @@ const Projects = () => {
               setCurrentModal(data)
               setModalOpen(true)
               }} key={i}
-                className='w-[280px] m-auto'>
+                className='w-[280px] m-auto '>
               <img src={data.img[0]}
-                  className='h-[200px] w-[280px]' />
+                  className='h-[200px] w-[280px] shadow-lg  
+                            hover:rounded-2xl duration-500 hover:cursor-pointer hover:scale-105' />
               <h4 className='text-text' >
                 {data.title}
               </h4>
