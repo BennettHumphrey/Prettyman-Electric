@@ -223,9 +223,9 @@ export const projects = [
     },
     {
         img: [
-            "./imgs/Artistic-Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
-            "./imgs/Artistic-Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
-            "./imgs/Artistic-Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
+            "./imgs/Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
+            "./imgs/Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
+            "./imgs/Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
             ],
         title: "TEST4",
         location: "Nine Images",

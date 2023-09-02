@@ -11,10 +11,10 @@ const AltContact = () => {
       <Nav  />
       <SubPageHeader data={subPages.residential} />
       <div className='
-      bg-[url(./resources/imgs/Artistic-Scaffolding-600.webp)] 
-      md:bg-[url(./resources/imgs/Artistic-Scaffolding-900.webp)]
-      lg:bg-[url(./resources/imgs/Artistic-Scaffolding-1200.webp)]
-      xl:bg-[url(./resources/imgs/Artistic-Scaffolding-1800.webp)]
+      bg-[url(./resources/imgs/Scaffolding-600.webp)] 
+      md:bg-[url(./resources/imgs/Scaffolding-900.webp)]
+      lg:bg-[url(./resources/imgs/Scaffolding-1200.webp)]
+      xl:bg-[url(./resources/imgs/Scaffolding-1800.webp)]
       h-full w-full bg-cover pb-10 sm:pb-16' >
         <div className='w-[95%] sm:w-[80vw] sm:p-12 max-w-[1000px] bg-white/80 relative m-auto
           p-4 top-8 pb-16 rounded-md' >
