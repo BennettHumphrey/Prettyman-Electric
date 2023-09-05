@@ -2,7 +2,7 @@ import React from 'react'
 
 const SubPageHeader = ({data}) => {
 
-
+ 
   return (
     <div className="flex flex-col justify-center text-center z-10
                           bg-[url(/imgs/Outdoor-Panel-1200.webp)] bg-cover bg-[35%]
