@@ -32,7 +32,7 @@ export const subPages = {
         headerTitle: "Commercial Electrical Solutions",
         headerText: "Providing affordable electrical services in the beautiful Kitsap County",
         bodyTitle: "Commercial Services Include",
-        bodyText: "Welcome to our Commercial Electrical Service section, where we specialize in powering your business with efficiency and reliability. At Pioneer Electrical, we understand the unique electrical demands of commercial enterprises, from small offices to large industrial facilities. Our dedicated team of skilled electricians is equipped to handle a wide range of commercial electrical needs, including installations, maintenance, energy-efficient solutions, and emergency repairs. With a commitment to minimizing downtime and maximizing productivity, we ensure that your business operations run smoothly and safely. Trust Pioneer Electrical to be your partner in keeping your commercial space electrified and efficient.",
+        bodyText: "At Pioneer Electrical, we understand the unique electrical demands of commercial enterprises, from small offices to large industrial facilities. Our dedicated team of skilled electricians is equipped to handle a wide range of commercial electrical needs, including installations, maintenance, energy-efficient solutions, and emergency repairs. With a commitment to minimizing downtime and maximizing productivity, we ensure that your business operations run smoothly and safely. Trust Pioneer Electrical to be your partner in keeping your commercial space electrified and efficient.",
         seal: false,
     },
     industrial: {
