@@ -22,18 +22,18 @@ import { FiPhoneCall } from "react-icons/fi";
 
 export const subPages = {
     residential: {
-        headerTitle: "Residential Electrician Services in Victoria",
-        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
+        headerTitle: "Residential Electrician Services in Kitsap County",
+        headerText: "Providing affordable electrical services in the beautiful Kitsap County",
         bodyTitle: "Residential Services Include",
-        bodyText: "First and foremost, at Fake Electric we value our clients. We always take the time to explain our services in detail, and what the job will entail. We will treat your home like it is ours, and leave it in a better state than we found it. Fake Electric proudly offers electrical consultations for every new prospective renovation or construction. During these consultations, Fake Electric's professional electricians will identify any and all hazards in your home, and make recommendations on how to remedy them. Fake Electric also provides a competitive quote for affordable electrical upgrades and repairs.",
+        bodyText: "At Pioneer Electrical, we understand that your home is your sanctuary, and ensuring its electrical systems are safe and efficient is our top priority. Our team of highly trained electricians specializes in a wide range of residential electrical services, from simple repairs and installations to comprehensive wiring and panel upgrades. Whether you're dealing with a flickering light, need to install new outlets, or want to enhance your home's energy efficiency, our professionals are here to provide reliable solutions tailored to your specific needs. With a commitment to quality, safety, and customer satisfaction, we're your trusted partner for all things electrical in your home. Experience the difference with Pioneer Electrical - where your electrical needs meet excellence.",
         seal: false,
     },
     commercial: {
-        headerTitle: "Commercial Electrician in Victoria",
-        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
-        bodyTitle: "Commercial Services",
-        bodyText: "Commercial buildings and establishments are subject to their own set of design requirements. Such buildings include medical offices, restaurants, hotels, warehouses, and retail stores. With its over 40 years of experience, Fake Electric is uniquely positioned to serve our clients with any and all of their repair or installation needs.",
-        seal: true,
+        headerTitle: "Commercial Electrical Solutions",
+        headerText: "Providing affordable electrical services in the beautiful Kitsap County",
+        bodyTitle: "Commercial Services Include",
+        bodyText: "Welcome to our Commercial Electrical Service section, where we specialize in powering your business with efficiency and reliability. At Pioneer Electrical, we understand the unique electrical demands of commercial enterprises, from small offices to large industrial facilities. Our dedicated team of skilled electricians is equipped to handle a wide range of commercial electrical needs, including installations, maintenance, energy-efficient solutions, and emergency repairs. With a commitment to minimizing downtime and maximizing productivity, we ensure that your business operations run smoothly and safely. Trust Pioneer Electrical to be your partner in keeping your commercial space electrified and efficient.",
+        seal: false,
     },
     industrial: {
         headerTitle: "Industrial Electrician in Victoria",
@@ -42,8 +42,8 @@ export const subPages = {
         bodyText: "Industrial electrical upgrades providing energy improvements will significantly decrease utility costs, and save a large part of your operating budget. Factories use a massive amount of energy. Research shows that manufacturing plants consume more than 1,000 times as much power as other industries. This level of consumption provides quick payback periods for electrical improvement costs. Electrical upgrades also add to the value of a facility with an average increased asset value of three dollars for every dollar spent.",
         seal: true,
     },
-    legal: {
-        headerTitle: "Lighting Services in Victoria",
+    government: {
+        headerTitle: "Government",
         headerText: "Providing affordable electrical services in the beautiful city of Victoria",
         bodyTitle: "Quality Service and Installation",
         bodyText: "In today's modern houses, lighting systems are becoming more and more integrated and complex. Our electricians have a wealth of experience, knowledge, and commitment to staying up-to-date with the latest technology. You can always be assured of qualified, competent electricians attending your needs. Regardless of the complexity or size of your project, the professionals at Fake Electric will do it right the first time!",
@@ -67,30 +67,36 @@ export const navOptions = [
         href: '/PioneerElectrical/',
         title: 'Home',
     },
+
     {
         href: '../PioneerElectrical/residential',
         title: 'Residential',
     },
+
     {
         href: '../PioneerElectrical/commercial',
         title: 'Commercial',
     },
-    {
-        href: '../PioneerElectrical/industrial',
-        title: 'Industrial',
-    },
-    {
-        href: '../PioneerElectrical/legal',
-        title: 'Legal Certifications',
-    },
+
+    // {
+    //     href: '../PioneerElectrical/industrial',
+    //     title: 'Industrial',
+    // },
+
+    // {
+    //     href: '../PioneerElectrical/government',
+    //     title: 'Government',
+    // },
+
     {
         href: '../PioneerElectrical/contact',
         title: 'Contact Us',
     },
-    {
-        href: '../PioneerElectrical/projects',
-        title: 'Projects',
-    },
+
+    // {
+    //     href: '../PioneerElectrical/projects',
+    //     title: 'Projects',
+    // },
 ]
 
 
@@ -137,14 +143,14 @@ export const phoneNumbers = [
 ]
 
 export const aboutUsMain = {
-    title: "Fake Electric, Electrician Services in Victoria",
+    title: "Your Electrical Experts: Quality Service, Every Project.",
     text: "\
-        Since it began in 1980, Fake Electric has been known for its swift, attentive service,\
-        high-quality work, and competitive prices. Master Electrician Mark Smith has years of \
-        experience with electrical jobs from big to small — everything from replacing a single \
-        light to wiring an entire warehouse with a team. He is an expert in complex installations, \
-        electrical safety, and system upgrades. Fake Electric promises quality work and superb \
-        customer service for its residential and commercial clients — many who have been using us for years!",
+    We are your premier full-service electrical contractor, dedicated to providing top-notch solutions \
+    for all your electrical needs. With years of industry experience, our skilled team is committed to \
+    delivering excellence in every project we undertake. From installations and repairs to maintenance \
+    and upgrades, we take pride in our attention to detail and customer-focused approach. At Pioneer \
+    Electrical, your satisfaction and safety are our top priorities. Discover a brighter, more efficient \
+    future with our expert electrical services.",
 }
 
 export const aboutUs = [
