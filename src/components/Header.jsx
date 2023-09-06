@@ -7,7 +7,7 @@ const Header = () => {
 
   const carouselOptions = {
       autoplay: true,
-      autoplayDelay: 6,
+      autoplayDelay: 8,
       line: true,
       img: true,
     }
