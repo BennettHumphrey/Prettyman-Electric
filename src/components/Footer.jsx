@@ -2,6 +2,8 @@ import React from 'react'
 import { CgFacebook, CgInstagram } from 'react-icons/cg'
 import { HiEnvelope, HiPhone } from 'react-icons/hi2'
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiGooglemaps } from "react-icons/si";
+
 
 const Footer = () => {
   return (
@@ -33,15 +35,18 @@ const Footer = () => {
               <h4 className='text-text-light border-b-[2px] border-b-accent
               max-w-[200px] my-8 mx-4'>Reviews</h4>
               <div className='flex ml-4 pb-12' >
-                  <div className='flex justify-center items-center bg-accent ml-[0.2rem] w-[60px] h-[60px]'  >
-                    <CgInstagram className='text-gray-300 w-3/5 h-3/5' />
-                  </div>
-                  <div className='flex justify-center items-center bg-accent ml-[0.2rem] w-[60px] h-[60px]' >
+                  <a 
+                    target='_blank'
+                    href='https://www.google.com/maps/place/Pioneer+Electrical+LLC/@47.6111038,-122.9574594,8z/data=!3m1!4b1!4m6!3m5!1s0x2e74c18673ebceb7:0x8c6aec3aec450e95!8m2!3d47.6111038!4d-122.9574594!16s%2Fg%2F11kqr1zl2j?entry=ttu'
+                    className='flex justify-center items-center bg-accent ml-[0.2rem] w-[60px] h-[60px]'  >
+                    <SiGooglemaps className='text-gray-300 w-3/5 h-3/5' />
+                  </a>
+                  {/* <div className='flex justify-center items-center bg-accent ml-[0.2rem] w-[60px] h-[60px]' >
                     <CgFacebook className='text-gray-300 w-3/5 h-3/5' />
                   </div>
                   <div className='flex justify-center items-center bg-accent ml-[0.2rem] w-[60px] h-[60px]' >
                     <FaLinkedinIn className='text-gray-300 w-3/5 h-3/5' />
-                  </div>
+                  </div> */}
               </div>
           </div>
       </div>

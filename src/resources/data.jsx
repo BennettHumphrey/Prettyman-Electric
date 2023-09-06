@@ -23,14 +23,14 @@ import { FiPhoneCall } from "react-icons/fi";
 export const subPages = {
     residential: {
         headerTitle: "Residential Electrician Services in Kitsap County",
-        headerText: "Providing affordable electrical services in the beautiful Kitsap County",
+        headerText: "Based in Kitsap County, our business proudly serves the electrical needs of Western Washington.",
         bodyTitle: "Residential Services Include",
         bodyText: "At Pioneer Electrical, we understand that your home is your sanctuary, and ensuring its electrical systems are safe and efficient is our top priority. Our team of highly trained electricians specializes in a wide range of residential electrical services, from simple repairs and installations to comprehensive wiring and panel upgrades. Whether you're dealing with a flickering light, need to install new outlets, or want to enhance your home's energy efficiency, our professionals are here to provide reliable solutions tailored to your specific needs. With a commitment to quality, safety, and customer satisfaction, we're your trusted partner for all things electrical in your home. Experience the difference with Pioneer Electrical - where your electrical needs meet excellence.",
         seal: false,
     },
     commercial: {
         headerTitle: "Commercial Electrical Solutions",
-        headerText: "Providing affordable electrical services in the beautiful Kitsap County",
+        headerText: "Based in Kitsap County, our business proudly serves the electrical needs of Western Washington.",
         bodyTitle: "Commercial Services Include",
         bodyText: "At Pioneer Electrical, we understand the unique electrical demands of commercial enterprises, from small offices to large industrial facilities. Our dedicated team of skilled electricians is equipped to handle a wide range of commercial electrical needs, including installations, maintenance, energy-efficient solutions, and emergency repairs. With a commitment to minimizing downtime and maximizing productivity, we ensure that your business operations run smoothly and safely. Trust Pioneer Electrical to be your partner in keeping your commercial space electrified and efficient.",
         seal: false,
@@ -102,23 +102,23 @@ export const navOptions = [
 
 
 export const headerSlides = [
+    // {
+    //     //Return JSX for title & text so can change colors?
+    //     img: "./imgs/Light-1200.webp",
+    //     svg: <HiOutlineLightBulb  />,
+    //     href: '../PioneerElectrical/industrial',
+    //     title: "Lighting Design",
+    //     text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
+    // },
     {
-        //Return JSX for title & text so can change colors?
-        img: "./imgs/Light-1200.webp",
-        svg: <HiOutlineLightBulb  />,
-        href: '../PioneerElectrical/industrial',
-        title: "Lighting Design",
-        text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
-    },
-    {
-        img: "./imgs/Office-Interior-1200.webp",
+        img: "./imgs/Bremerton-1000.webp",
         svg: <FiSun />,
         href: '../PioneerElectrical/residential',
         title: "Residential Services",
         text: "Service upgrades, renovations, new construction, and more!",
     },
     {
-        img: "./imgs/City-Skyline-1200.webp",
+        img: "./imgs/Seattle-1200.webp",
         svg: <FiWifi  />,
         href: '../PioneerElectrical/commercial',
         title: "Commercial Services",
@@ -178,33 +178,33 @@ export const aboutUs = [
 
 export const reviews = [
     {
-        text: "Sean Dayton",
+        text: "Kevin Pool",
         img: "",
         svg: "",
         href: "",
-        title: "I have an older condo, and needed some breakers and wires replaced, but two other electricians said the walls and floor aren't concrete so it couldn't be done.  But Mike is great, and he did the job well.  Professional, reliable, great value, and not afraid to do a more difficult task.",
+        title: "Quick response, estimate, and job completion of our Tesla charger!!! Thank you for your service!",
     },
-    {
-        text: "Mike Smith",
-        img: "",
-        svg: "",
-        href: "",
-        title: "Sean and team completely re-did the electrical in our apartment complex before upgrading us to a 400 amp service. The care, time, and expertise that Fake Electric brought to the jobsite was something that I have never seen before. Thanks to the Fake Electric for being true electrical professionals.",
-    },
-    {
-        text: "Pedro Gonzales",
-        img: "",
-        svg: "",
-        href: "",
-        title: "The people at Fake Electric are capable of commercial and residential projects with a sharp focus on quality. Clean work and careful attention, along with a respectful and knowledgeable crew is what keeps us calling them back.",
-    },
-    {
-        text: "Sean Peters",
-        img: "",
-        svg: "",
-        href: "",
-        title: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
-    },
+    // {
+    //     text: "Mike Smith",
+    //     img: "",
+    //     svg: "",
+    //     href: "",
+    //     title: "Sean and team completely re-did the electrical in our apartment complex before upgrading us to a 400 amp service. The care, time, and expertise that Fake Electric brought to the jobsite was something that I have never seen before. Thanks to the Fake Electric for being true electrical professionals.",
+    // },
+    // {
+    //     text: "Pedro Gonzales",
+    //     img: "",
+    //     svg: "",
+    //     href: "",
+    //     title: "The people at Fake Electric are capable of commercial and residential projects with a sharp focus on quality. Clean work and careful attention, along with a respectful and knowledgeable crew is what keeps us calling them back.",
+    // },
+    // {
+    //     text: "Sean Peters",
+    //     img: "",
+    //     svg: "",
+    //     href: "",
+    //     title: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
+    // },
 ]
 
 
