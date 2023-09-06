@@ -171,7 +171,7 @@ export const aboutUs = [
         svg: <HiOutlineShieldCheck className="h-20 w-20 text-text mx-auto group-hover:animate-shield-animation"  />,
         href: "../PioneerElectrical/contact",
         title: "Insured, Bonded, Licensed",
-        text: "Our electricians are fully licensed, with fully equiped vans to help with all your electrical needs",
+        text: "Our licensed electricians come fully equipped to address all your electrical needs.",
     },
 ]
 
