@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from './Footer'
 import Nav from './Nav/Nav'
+import { contactInfo } from '../resources/data'
 
 const Contact = () => {
   return (
@@ -31,27 +32,27 @@ const Contact = () => {
                         </form>
                       </div>
                 </div>
-                <div className='flex flex-col justify-center gap-y-2 text-center mb-8'>
-                    <h3 className='underline mt-2' >Where to find us</h3>
+                <div className='flex flex-col justify-center gap-y-2 text-center mb-16'>
+                    <h3 className='underline mt-2 mb-4' >Where to find us</h3>
                     <h4>Phone</h4>
-                    <p>Office: 250-555-5555</p>
-                    <p>Cell: 250-555-5556</p>
-                    <p>Cell: 250-555-5557</p>
+                    {/* <p>Office: 250-555-5555</p>
+                    <p>Cell: 250-555-5556</p> */}
+                    <p>Cell: {contactInfo.phone}</p>
                     <h4>Email</h4>
-                    <p>bennetthumphrey98@gmail.com</p>
+                    <p>{contactInfo.email}</p>
                     <h3 className='underline mt-2' >Hours of Operation</h3>
-                    <p>Mon - Fri: 8 - 4</p>
-                    <p>Sat: 9 - 3</p>
-                    <p>Sun: CLOSED</p>
-                    <h3 className='underline mt-2' >Address</h3>
-                    <p>1234 Fake St, Victoria BC V1E 9U4</p>
+                    <p>Mon - Fri: {contactInfo.hours.weekday}</p>
+                    <p>Sat: {contactInfo.hours.sat}</p>
+                    <p>Sun: {contactInfo.hours.sun}</p>
+                    {/* <h3 className='underline mt-2' >Address</h3>
+                    <p>1234 Fake St, Victoria BC V1E 9U4</p> */}
                 </div>
             </div>
             
             <div className='hover:cursor-pointer text-text-light bg-accent w-[80vw] max-w-[240px] h-14 my-2 mx-auto p-2 mb-8 text-center no-underline duration-500 hover:scale-110 hover:rounded-xl'>
               <div  >
                   <p className='text-xs m-auto'>CALL NOW FOR A FREE QUOTE</p>
-                  <h5 className='text-xl'>250-555-5555</h5>
+                  <h5 className='text-xl'>{contactInfo.phone}</h5>
               </div>
             </div>
         </div>

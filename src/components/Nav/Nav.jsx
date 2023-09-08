@@ -2,6 +2,7 @@ import React from 'react';
 import { useWindowWidth } from '../useWindowWidth';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
+import { contactInfo } from '../../resources/data';
 
 const Nav = () => {
 
@@ -14,7 +15,7 @@ const Nav = () => {
             <img src="./company-logo-large.webp"
               className='px-4 pb-2 h-[96px] w-[300px] bg-black' />
             <h1 className='text-2xl p-2 bg-accent text-text-light w-full text-center' >
-              Call us! 250-555-5555
+              Call us! {contactInfo.phone}
             </h1>
         </div>
         {width > 1018 ? <DesktopNav  /> : <MobileNav  />}

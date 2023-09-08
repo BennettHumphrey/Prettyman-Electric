@@ -127,20 +127,6 @@ export const headerSlides = [
 ]
 
 
-export const phoneNumbers = [
-    {
-        title: "Office Line",
-        text: "1.250.555.5555"
-    },
-    {
-        title: "Emergency",
-        text: "1.250.555.5556"
-    },
-    {
-        title: "Working Hours",
-        text: "9:00am - 6:00pm"
-    },
-]
 
 export const aboutUsMain = {
     title: "Your Electrical Experts: Quality Service, Every Project.",
@@ -159,7 +145,7 @@ export const aboutUs = [
         svg: <IoCheckmark className="h-20 w-20 text-text mx-auto group-hover:animate-checkmark-animation" />,
         href: "../PioneerElectrical/contact",
         title: "Quality Guarantee",
-        text: "Reliable service is what every customer gets when they have a Fake Electric electrician handling their electrical problems",
+        text: "Reliable service is what every customer gets when they have a Pioneer Electrical electrician handling their electrical problems",
     },
     {
         svg: <FiPhoneCall className="h-20 w-20 pt-3 text-accent mx-auto group-hover:animate-phone-animation"  />,
@@ -236,5 +222,33 @@ export const projects = [
         title: "TEST4",
         location: "Nine Images",
         text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
+    },
+]
+
+
+export const contactInfo = {
+    phone: "360-447-8137",
+    hours: {
+        weekday: "8:00am - 6:00pm",
+        sat: "8:00am - 6:00pm",
+        sun: "By appointment",
+    },
+    email: "c.kroneberger@pioneerelectrical.net",
+    address: "",
+}
+
+
+export const phoneNumbers = [
+    {
+        title: "Cell Number",
+        text: contactInfo.phone
+    },
+    {
+        title: "Mon-Sat Hours",
+        text: contactInfo.hours.weekday,
+    },
+    {
+        title: "Sunday Hours",
+        text: contactInfo.hours.sun
     },
 ]

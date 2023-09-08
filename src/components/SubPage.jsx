@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Nav from './Nav/Nav';
 import ReviewsButton from './ReviewsButton';
 import SubPageHeader from './SubPageHeader';
+import { contactInfo } from '../resources/data';
 
 const SubPage = ({ data }) => {
     
@@ -36,7 +37,7 @@ const SubPage = ({ data }) => {
                   </figcaption>
                 </div>}
                 <ReviewsButton  />
-                <p className='text-center text-xl my-12' >250-555-5555</p>
+                <p className='text-center text-xl my-12' >{contactInfo.phone}</p>
               </div>
           </div>
       <Footer  />
