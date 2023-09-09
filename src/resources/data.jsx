@@ -233,7 +233,7 @@ export const contactInfo = {
         sat: "8:00am - 6:00pm",
         sun: "By appointment",
     },
-    email: "c.kroneberger@pioneerelectrical.net",
+    email: "inquiries@pioneerelectric.net",
     address: "",
 }
 

@@ -27,8 +27,8 @@ const Footer = () => {
                       <HiEnvelope className='text-accent h-full w-full p-2' />
                     </a>
                   </div>
-                  <a href="mailto:bennetthumphrey98@gmail.com">
-                    <p>c.kroneberger<br/>@pioneerelectrical.net</p>
+                  <a href={`mailto:${contactInfo.email}`}>
+                    <p>inquiries@<br/>pioneerelectric.net</p>
                   </a>
               </div>
           </div>

@@ -16,7 +16,7 @@ const Contact = () => {
             <div className='flex flex-col justify-center md:flex-row md:justify-evenly'>
                 <div className='flex justify-center flex-col gap-y-4 text-center mb-8'>
                     <div className='flex flex-col justify-center'>
-                        <form className='flex flex-col justify-center' id="fs-frm" name="simple-contact-form" acceptCharset="utf-8" action="https://formspree.io/f/mvolylne" method="post">
+                        <form className='flex flex-col justify-center' id="fs-frm" name="simple-contact-form" acceptCharset="utf-8" action="https://formspree.io/f/maygjzea" method="post">
                           <fieldset className='flex flex-col justify-center text-center gap-y-2' id="fs-frm-inputs">
                             <label htmlFor="full-name">Full Name</label>
                             <input className='p-1 border-black border rounded-sm' type="text" name="name" id="full-name" placeholder="First and Last" required=""/>
