@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const DesktopNav = () => {
   return (
     <div className='sticky bg-main z-10 flex justify-evenly h-12 text-xl' >
-        <Link to="/">
+        <Link to="/PioneerElectrical/">
             <img 
             src="./company-logo.png" 
             height="50px"

@@ -64,37 +64,37 @@ export const subPages = {
 
 export const navOptions = [
     {
-        href: '/',
+        href: '/PioneerElectrical/',
         title: 'Home',
     },
 
     {
-        href: '../residential',
+        href: '../PioneerElectrical/residential',
         title: 'Residential',
     },
 
     {
-        href: '../commercial',
+        href: '../PioneerElectrical/commercial',
         title: 'Commercial',
     },
 
     // {
-    //     href: '../industrial',
+    //     href: '../PioneerElectrical/industrial',
     //     title: 'Industrial',
     // },
 
     // {
-    //     href: '../government',
+    //     href: '../PioneerElectrical/government',
     //     title: 'Government',
     // },
 
     {
-        href: '../contact',
+        href: '../PioneerElectrical/contact',
         title: 'Contact Us',
     },
 
     // {
-    //     href: '../projects',
+    //     href: '../PioneerElectrical/projects',
     //     title: 'Projects',
     // },
 ]
@@ -106,21 +106,21 @@ export const headerSlides = [
     //     //Return JSX for title & text so can change colors?
     //     img: "./imgs/Light-1200.webp",
     //     svg: <HiOutlineLightBulb  />,
-    //     href: '../industrial',
+    //     href: '../PioneerElectrical/industrial',
     //     title: "Lighting Design",
     //     text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
     // },
     {
         img: "./imgs/Bremerton-1000.webp",
         svg: <FiSun />,
-        href: '../residential',
+        href: '../PioneerElectrical/residential',
         title: "Residential Services",
         text: "Service upgrades, renovations, new construction, and more!",
     },
     {
         img: "./imgs/Seattle-1200.webp",
         svg: <FiWifi  />,
-        href: '../commercial',
+        href: '../PioneerElectrical/commercial',
         title: "Commercial Services",
         text: "Data wiring, alarm systems, new construction, and much more!",
     },
@@ -143,19 +143,19 @@ export const aboutUs = [
     // Animations in tailwind.config.cjs
     {
         svg: <IoCheckmark className="h-20 w-20 text-text mx-auto group-hover:animate-checkmark-animation" />,
-        href: "../contact",
+        href: "../PioneerElectrical/contact",
         title: "Quality Guarantee",
         text: "Reliable service is what every customer gets when they have a Pioneer Electrical electrician handling their electrical problems",
     },
     {
         svg: <FiPhoneCall className="h-20 w-20 pt-3 text-accent mx-auto group-hover:animate-phone-animation"  />,
-        href: "../contact",
+        href: "../PioneerElectrical/contact",
         title: "24/7 Service",
         text: "Our technicians are available 24/7 for any emergency calls, helping with all that life can throw at you",
     },
     {
         svg: <HiOutlineShieldCheck className="h-20 w-20 text-text mx-auto group-hover:animate-shield-animation"  />,
-        href: "../contact",
+        href: "../PioneerElectrical/contact",
         title: "Insured, Bonded, Licensed",
         text: "Our licensed electricians come fully equipped to address all your electrical needs.",
     },
