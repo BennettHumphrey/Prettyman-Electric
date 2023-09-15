@@ -8,8 +8,7 @@ import ReviewsButton from './ReviewsButton';
 const Reviews = () => {
 
   const carouselOptions = {
-    autoplay: false,
-    // autoplay: true,
+    autoplay: true,
     autoplayDelay: 6,
     line: false,
   }

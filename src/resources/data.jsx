@@ -164,11 +164,24 @@ export const aboutUs = [
 
 export const reviews = [
     {
+        text: "Peter Bradwick",
+        title: "Chris and pioneer electrical are phenomenal. I run one of the top real estate teams in Kitsap county and they are the first people I will always refer to all of my clients. I’ve been so impressed with every single interaction I’ve had with this company and wish there were 10 stars to give them.",
+    },
+    {
         text: "Kevin Pool",
-        img: "",
-        svg: "",
-        href: "",
         title: "Quick response, estimate, and job completion of our Tesla charger!!! Thank you for your service!",
+    },
+    {
+        text: "Mom and Skips",
+        title: "Very professional! Excellent work all done in a timely fashion. I will definitely call these guys again!!!",
+    },
+    {
+        text: "Robert",
+        title: "I've known Sean for over 10 years he has wired a few jobs for me in montana and would totally trust his skills. Thank you for doing a clean and traceable job.",
+    },
+    {
+        text: "Des Tibbs",
+        title: "Friendly, professional and most importantly the job was done quickly and correctly.",
     },
     // {
     //     text: "Mike Smith",
@@ -176,20 +189,6 @@ export const reviews = [
     //     svg: "",
     //     href: "",
     //     title: "Sean and team completely re-did the electrical in our apartment complex before upgrading us to a 400 amp service. The care, time, and expertise that Fake Electric brought to the jobsite was something that I have never seen before. Thanks to the Fake Electric for being true electrical professionals.",
-    // },
-    // {
-    //     text: "Pedro Gonzales",
-    //     img: "",
-    //     svg: "",
-    //     href: "",
-    //     title: "The people at Fake Electric are capable of commercial and residential projects with a sharp focus on quality. Clean work and careful attention, along with a respectful and knowledgeable crew is what keeps us calling them back.",
-    // },
-    // {
-    //     text: "Sean Peters",
-    //     img: "",
-    //     svg: "",
-    //     href: "",
-    //     title: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
     // },
 ]
 
