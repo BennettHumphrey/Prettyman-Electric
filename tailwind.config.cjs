@@ -14,12 +14,10 @@ module.exports = {
       },
       extend: {
         colors: {
-          'main': 'hsla(10, 0%, 95%, 1)',
-          'accent': '#ffaa06',
-          // Logo colour
-          // 'accent': '#f7941d',
-          'contact': 'red',
-          'menu': '#123196',
+          'main': '#f7f7f7',
+          'accent': '#8bc34a',
+          'contact': '#8bc34a',
+          'menu': '#7fad3b',
           'text': '#333645',
           'text-light': 'white',
           'dropdown': '#242D37',
@@ -46,7 +44,7 @@ module.exports = {
           'shield': {
             '0%': {},
             '40%': { color: '#ffaa06' },
-            '100%': { color: 'inherit' },
+            '100%': { color: '#8bc34a' },
           },
         },
     },

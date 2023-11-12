@@ -18,7 +18,7 @@ const SubPage = ({ data }) => {
           {/* If using data.bodyTitle, change mb-12 to my-12 here and on the line (l20) */}
             <div className="flex flex-col mb-12 mx-auto justify-center">
                 {/* <h2 className='text-center sm:mx-8 text-2xl' >{data.bodyTitle}</h2> */}
-                <div className="h-px w-[30%] bg-line mb-12 mx-auto"/>
+                <div className="h-px w-[30%] bg-line mb-12 mx-auto z-50"/>
                 <div className="list-none leading-[1.6] text-xl
                                flex flex-col justify-center lg:flex-row" >
                     <div className="sm:py-0 sm:px-8 sm:max-w-[60vw]">

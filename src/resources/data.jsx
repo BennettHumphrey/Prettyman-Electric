@@ -22,42 +22,25 @@ import { FiPhoneCall } from "react-icons/fi";
 
 export const subPages = {
     residential: {
-        headerTitle: "Residential Electrician Services in Kitsap County",
-        headerText: "Based in Kitsap County, our business proudly serves the electrical needs of Western Washington.",
-        bodyTitle: "Residential Services Include",
-        bodyText: "At Pioneer Electrical, we understand that your home is your sanctuary, and ensuring its electrical systems are safe and efficient is our top priority. Our team of highly trained electricians specializes in a wide range of residential electrical services, from simple repairs and installations to comprehensive wiring and panel upgrades. Whether you're dealing with a flickering light, need to install new outlets, or want to enhance your home's energy efficiency, our professionals are here to provide reliable solutions tailored to your specific needs. With a commitment to quality, safety, and customer satisfaction, we're your trusted partner for all things electrical in your home. Experience the difference with Pioneer Electrical - where your electrical needs meet excellence.",
+        headerTitle: "Residential Electrician Services in Victoria, BC",
+        headerText: "Based in Victoria, we service all the the South Island.",
+        bodyTitle: "Residential Services:",
+        bodyText: "At Fake Electric, your home's safety and electrical efficiency take precedence, with our specialized team offering a range of residential services, addressing everything from simple repairs to comprehensive upgrades, and ensuring tailored solutions for issues like flickering lights, new outlets, or enhancing energy efficiency, all delivered with a steadfast commitment to quality and safety, making us your trusted partner for all your home's electrical needs.",
         seal: false,
     },
     commercial: {
         headerTitle: "Commercial Electrical Solutions",
-        headerText: "Based in Kitsap County, our business proudly serves the electrical needs of Western Washington.",
-        bodyTitle: "Commercial Services Include",
-        bodyText: "At Pioneer Electrical, we understand the unique electrical demands of commercial enterprises, from small offices to large industrial facilities. Our dedicated team of skilled electricians is equipped to handle a wide range of commercial electrical needs, including installations, maintenance, energy-efficient solutions, and emergency repairs. With a commitment to minimizing downtime and maximizing productivity, we ensure that your business operations run smoothly and safely. Trust Pioneer Electrical to be your partner in keeping your commercial space electrified and efficient.",
+        headerText: "Based in Victoria, our company proudly serves the entire South Island.",
+        bodyTitle: "Commercial Services:",
+        bodyText: "At Fake Electric, we comprehend the distinct electrical needs of commercial ventures, catering to everything from small offices to large industrial facilities; our skilled electricians are adept at handling a range of commercial services, including installations, maintenance, energy-efficient solutions, and emergency repairs, all geared towards minimizing downtime and maximizing productivity, solidifying Fake Electric as your reliable partner in ensuring the electrification and efficiency of your commercial space.",
         seal: false,
     },
     industrial: {
         headerTitle: "Industrial Electrician in Victoria",
         headerText: "Providing affordable electrical services in the beautiful city of Victoria",
-        bodyTitle: "Industrial Services",
-        bodyText: "Industrial electrical upgrades providing energy improvements will significantly decrease utility costs, and save a large part of your operating budget. Factories use a massive amount of energy. Research shows that manufacturing plants consume more than 1,000 times as much power as other industries. This level of consumption provides quick payback periods for electrical improvement costs. Electrical upgrades also add to the value of a facility with an average increased asset value of three dollars for every dollar spent.",
-        seal: true,
-    },
-    government: {
-        headerTitle: "Government",
-        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
-        bodyTitle: "Quality Service and Installation",
-        bodyText: "In today's modern houses, lighting systems are becoming more and more integrated and complex. Our electricians have a wealth of experience, knowledge, and commitment to staying up-to-date with the latest technology. You can always be assured of qualified, competent electricians attending your needs. Regardless of the complexity or size of your project, the professionals at Fake Electric will do it right the first time!",
-        seal: true,
-    },
-    contact: {
-        headerTitle: "Hire an Electrician in Victoria",
-        headerText: "Providing affordable electrical services in the beautiful city of Victoria",
-        // seal: true,
-    },
-    projects: {
-        headerTitle: "Our Projects",
-        headerText: "A small selection of our projects",
-        // seal: true,
+        bodyTitle: "Industrial Services:",
+        bodyText: "Upgrading industrial electrical systems for energy efficiency can substantially reduce utility expenses, offering substantial savings in your operating budget, particularly crucial for factories with their massive energy consumption, where manufacturing plants utilize over 1,000 times more power than other industries, resulting in swift payback periods for improvement costs; additionally, these upgrades contribute to the facility's value, with an average increased asset value of three dollars for every dollar invested.",
+        seal: false,
     },
 }
 
@@ -77,66 +60,43 @@ export const navOptions = [
         href: '../Electrical-Site-2-React/commercial',
         title: 'Commercial',
     },
-
-    // {
-    //     href: '../Electrical-Site-2-React/industrial',
-    //     title: 'Industrial',
-    // },
-
-    // {
-    //     href: '../Electrical-Site-2-React/government',
-    //     title: 'Government',
-    // },
-
     {
         href: '../Electrical-Site-2-React/contact',
         title: 'Contact Us',
     },
-
-    // {
-    //     href: '../Electrical-Site-2-React/projects',
-    //     title: 'Projects',
-    // },
 ]
 
 
 
 export const headerSlides = [
-    // {
-    //     //Return JSX for title & text so can change colors?
-    //     img: "./imgs/Light-1200.webp",
-    //     svg: <HiOutlineLightBulb  />,
-    //     href: '../Electrical-Site-2-React/industrial',
-    //     title: "Lighting Design",
-    //     text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
-    // },
     {
-        img: "./imgs/Bremerton-1000.webp",
+        img: "./imgs/Vancouver-Sunset.jpg",
         svg: <FiSun />,
         href: '../Electrical-Site-2-React/residential',
         title: "Residential Services",
         text: "Service upgrades, renovations, new construction, and more!",
     },
     {
-        img: "./imgs/Seattle-1200.webp",
+        img: "./imgs/Office-Interior.webp",
         svg: <FiWifi  />,
         href: '../Electrical-Site-2-React/commercial',
         title: "Commercial Services",
         text: "Data wiring, alarm systems, new construction, and much more!",
+    },
+    {
+        img: "./imgs/Lighting-Display.jpg",
+        svg: <HiOutlineLightBulb  />,
+        href: '../Electrical-Site-2-React/industrial',
+        title: "Lighting Design",
+        text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
     },
 ]
 
 
 
 export const aboutUsMain = {
-    title: "Your Electrical Experts: Quality Service, Every Project.",
-    text: "\
-    We are your premier full-service electrical contractor, dedicated to providing top-notch solutions \
-    for all your electrical needs. With years of industry experience, our skilled team is committed to \
-    delivering excellence in every project we undertake. From installations and repairs to maintenance \
-    and upgrades, we take pride in our attention to detail and customer-focused approach. At Pioneer \
-    Electrical, your satisfaction and safety are our top priorities. Discover a brighter, more efficient \
-    future with our expert electrical services.",
+    title: "We prioritize safety over all else",
+    text: "Prioritizing safety in the enhancement of residential electrical systems is crucial, particularly for homes with diverse energy needs; these safety-focused improvements not only contribute to fostering a secure living environment but also provide a substantial return on investment, thereby placing a paramount emphasis on the well-being of both the home infrastructure and its occupants, ensuring a harmonious blend of security and efficiency.",
 }
 
 export const aboutUs = [
@@ -145,94 +105,51 @@ export const aboutUs = [
         svg: <IoCheckmark className="h-20 w-20 text-text mx-auto group-hover:animate-checkmark-animation" />,
         href: "../Electrical-Site-2-React/contact",
         title: "Quality Guarantee",
-        text: "Reliable service is what every customer gets when they have a Pioneer Electrical electrician handling their electrical problems",
+        text: "Each customer receives dependable service when a Fake Electric electrician manages their electrical issues.",
     },
     {
-        svg: <FiPhoneCall className="h-20 w-20 pt-3 text-accent mx-auto group-hover:animate-phone-animation"  />,
+        svg: <HiOutlineShieldCheck className="h-20 w-20 text-accent mx-auto group-hover:animate-shield-animation"  />,
         href: "../Electrical-Site-2-React/contact",
         title: "24/7 Service",
-        text: "Our technicians are available 24/7 for any emergency calls, helping with all that life can throw at you",
+        text: "Available around the clock, our technicians are ready for emergency calls, assisting with whatever challenges life may present.",
     },
     {
-        svg: <HiOutlineShieldCheck className="h-20 w-20 text-text mx-auto group-hover:animate-shield-animation"  />,
+        svg: <FiPhoneCall className="h-20 w-20 pt-3 text-text mx-auto group-hover:animate-phone-animation"  />,
         href: "../Electrical-Site-2-React/contact",
         title: "Insured, Bonded, Licensed",
-        text: "Our licensed electricians come fully equipped to address all your electrical needs.",
+        text: "Fully equipped, our licensed electricians are prepared to handle all your electrical requirements.",
     },
 ]
 
 
 export const reviews = [
     {
-        text: "Peter Bradwick",
-        title: "Chris and pioneer electrical are phenomenal. I run one of the top real estate teams in Kitsap county and they are the first people I will always refer to all of my clients. I’ve been so impressed with every single interaction I’ve had with this company and wish there were 10 stars to give them.",
+        text: "Connor Mitchell",
+        title: "Exceptional service from Fake Electric! Transformed our home's electrical system seamlessly. Their team is professional, efficient, and trustworthy. Exceeded expectations with their expertise in residential and small commercial work.",
     },
     {
-        text: "Kevin Pool",
-        title: "Quick response, estimate, and job completion of our Tesla charger!!! Thank you for your service!",
+        text: "Olivia Lawson",
+        title: "Fake Electric is a game-changer! Outstanding solutions for our small business. The team is knowledgeable, prompt, and their work is top-notch in both residential and small commercial settings. Highly recommend!",
     },
     {
-        text: "Mom and Skips",
-        title: "Very professional! Excellent work all done in a timely fashion. I will definitely call these guys again!!!",
+        text: "Brandon Harper",
+        title: "Fake Electric is a gem! Fixed our complex residential wiring issues swiftly. Their expertise, reliability, and fair pricing set them apart. A 5-star electrical wizard for both homes and small businesses!",
     },
     {
-        text: "Robert",
-        title: "I've known Sean for over 10 years he has wired a few jobs for me in montana and would totally trust his skills. Thank you for doing a clean and traceable job.",
-    },
-    {
-        text: "Des Tibbs",
-        title: "Friendly, professional and most importantly the job was done quickly and correctly.",
-    },
-    // {
-    //     text: "Mike Smith",
-    //     img: "",
-    //     svg: "",
-    //     href: "",
-    //     title: "Sean and team completely re-did the electrical in our apartment complex before upgrading us to a 400 amp service. The care, time, and expertise that Fake Electric brought to the jobsite was something that I have never seen before. Thanks to the Fake Electric for being true electrical professionals.",
-    // },
-]
-
-
-export const projects = [
-    {
-        img: ["./imgs/City-Skyline-1200.webp", "./imgs/Light-1200.webp"],
-        title: "TEST1",
-        location: "Two Images",
-        text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
-    },
-    {
-        img: ["./imgs/Office-Interior-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp"],
-        title: "TEST2",
-        location: "Three Images",
-        text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
-    },
-    {
-        img: ["./imgs/Light-1200.webp"],
-        title: "TEST3",
-        location: "One Image",
-        text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
-    },
-    {
-        img: [
-            "./imgs/Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
-            "./imgs/Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
-            "./imgs/Scaffolding-1200.webp", "./imgs/Light-1200.webp", "./imgs/City-Skyline-1200.webp",
-            ],
-        title: "TEST4",
-        location: "Nine Images",
-        text: "Fake Electrical team were superb, and I would highly recommend this company to anyone needing electrical upgrades in Victoria! They were clean, attentive, respectful, and finished the job on time. 10/10.",
+        text: "Zoe Thompson",
+        title: "Fake Electric is phenomenal! Transformed our outdated electrical setup flawlessly. Their team is skilled, professional, and dedicated to customer satisfaction. Impressed with their expertise in residential and small commercial work!",
     },
 ]
 
 
 export const contactInfo = {
-    phone: "360-447-8137",
+    phone: "250-555-5555",
     hours: {
-        weekday: "8:00am - 6:00pm",
-        sat: "8:00am - 6:00pm",
-        sun: "By appointment",
+        weekday: "9:00am - 5:00pm",
+        sat: "10:00am - 4:00pm",
+        sun: "By appointment only",
     },
-    email: "inquiries@pioneerelectric.net",
+    email: "bennetthumphrey98@gmail.com",
     address: "",
 }
 

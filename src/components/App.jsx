@@ -1,5 +1,4 @@
 import React, { useLayoutEffect } from 'react'
-import Projects from './Projects/Projects';
 import Home from './Home';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import SubPage from './SubPage';
@@ -24,13 +23,9 @@ const Wrapper = ({children}) => {
 
         <Routes>
           <Route path="/Electrical-Site-2-React/" element={<Home/>} />
-          <Route path="/Electrical-Site-2-React/projects" element={<Projects/>} />
           <Route path="/Electrical-Site-2-React/residential" element={<SubPage data={subPages.residential} />} />
           <Route path="/Electrical-Site-2-React/commercial" element={<SubPage data={subPages.commercial} />} />
-          <Route path="/Electrical-Site-2-React/industrial" element={<SubPage data={subPages.industrial} />} />
-          <Route path="/Electrical-Site-2-React/government" element={<SubPage data={subPages.government} />} />
           <Route path="/Electrical-Site-2-React/contact" element={<Contact />} />
-          <Route path="/Electrical-Site-2-React/projects" element={<Projects />} />
         </Routes>
 
       </Wrapper>
