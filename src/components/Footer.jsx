@@ -7,22 +7,22 @@ const Footer = () => {
   return (
     <footer className='bg-company' > 
       <h3 className='bg-footer text-text-light text-xl relative top-0 w-full
-      h-20 my-auto text-center leading-[4.8rem]' >Fake Electric</h3>
+      h-20 my-auto text-center leading-[4.8rem]' >Prettyman Electric</h3>
       <div className='flex flex-col justify-center sm:flex-row sm:mb-8' >
           <div className='flex flex-col justify-center' >
               <h4 className=' font-bold text-footer-text border-b-[2px] border-b-main
-              max-w-[200px] mt-8 mx-4' >Fake Electric LLC</h4>
+              max-w-[200px] mt-8 mx-4' >Prettyman Electric</h4>
               <div className='my-2 mx-4 flex text-footer-text items-center' >
                   <div className='flex justify-center items-center border border-main mr-2 w-[35px] h-[35px]' >
                     <HiMapPin className='text-main h-full w-full p-2' />
                   </div>
-                  <p>Fernwood,<br/>Victoria, BC</p>
+                  <p>Lewiston, Idaho</p>
               </div>
               <div className='my-2 mx-4 flex text-footer-text items-center' >
                   <div className='flex justify-center items-center border border-main mr-2 w-[35px] h-[35px]' >
                     <HiPhone className='text-main h-full w-full p-2' />
                   </div>
-                  <p>250-555-5555</p>
+                  <p>208-603-9127</p>
               </div>
               <div className='my-2 mx-4 flex text-footer-text items-center 
                             hover:text-orange-400 group duration-700'>
@@ -34,7 +34,7 @@ const Footer = () => {
                     </a>
                   </div>
                   <a href="mailto:Poweronelectric23@gmail.com">
-                    <p>bennetthumphrey98<br/>@gmail.com</p>
+                    <p>kyle<br/>@prettymanelectric.net</p>
                   </a>
               </div>
           </div>

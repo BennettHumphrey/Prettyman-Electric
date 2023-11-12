@@ -7,7 +7,7 @@ const BubblesSection = ({ bubbles, img, imgPos }) => {
 
 
   return (
-    <div className={`${img} ${imgPos} bg-cover bg-fixed min-h-[540px]
+    <div className={`${img} ${imgPos} bg-cover bg-center bg-fixed min-h-[540px]
                     lg:h-[55vw] max-h-[85vh]'
                     flex flex-col justify-around items-around gap-6 p-8
                     ` + (bubbles.length >= 3 ? 'lg:flex-row' : 'md:flex-row')}>

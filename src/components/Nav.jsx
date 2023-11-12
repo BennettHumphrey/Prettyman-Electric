@@ -17,7 +17,7 @@ const Nav = () => {
             <div className='w-full flex items-center justify-center
                                 gap-[5vw] pr-[6vw]'>
                 <p className='font-bold text-company text-3xl' >
-                    Fake Electric
+                    Prettyman Electric
                 </p>
             </div>
         </div>

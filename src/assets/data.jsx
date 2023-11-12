@@ -7,7 +7,7 @@ export const logo = 'Company-Logo.png'
 export const services = {
     header: 'We do all types of Residential and Commercial projects!',
     body: '',
-    img: 'bg-[url(/Burnt-Light.jpg)]',
+    img: 'bg-[url(/New-Construction.jpg)]',
     href:'#services',
     bubbles: [
         {
@@ -29,8 +29,8 @@ export const services = {
 
 export const about = {
     header: "We Proudly Exceed our Customers' Expectations.",
-    body: 'At Fake Electric, we are committed to our customers, and we always strive to better understand their needs. At Fake Electric we believe in efficient teamwork that always includes regular communication amongst our staff. We do this by applying a very high standard of work in everything we do.',
-    img: 'bg-[url(/Coal-Harbour-Dark.jpg)]',
+    body: 'At Prettyman Electric, we are committed to our customers, and we always strive to better understand their needs. At Prettyman Electric we believe in efficient teamwork that always includes regular communication amongst our staff. We do this by applying a very high standard of work in everything we do.',
+    img: 'bg-[url(/Christmas-House.jpg)]',
     href:'#about',
     bubbles: [
         {

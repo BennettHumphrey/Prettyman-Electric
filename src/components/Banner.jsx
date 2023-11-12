@@ -10,7 +10,7 @@ const [modalOpen, setModalOpen] = useState(false)
   return (
     <div>
       {modalOpen && <Modal setModalOpen={setModalOpen} />}
-      <div className='bg-[url(/Vancouver-Sunset.jpg)] h-[440px]
+      <div className='bg-[url(/Lewiston.jpg)] h-[440px]
                       bg-cover bg-fixed flex flex-col gap-20
                       lg:flex-row lg:justify-center lg:gap-40
                       xl:h-[65vw] max-h-[85vh]'>
@@ -24,7 +24,7 @@ const [modalOpen, setModalOpen] = useState(false)
           <p className='text-main bg-bubble text-center text-xl font-bold rounded-2xl
                           w-[80%] max-w-[300px] m-auto p-1 font-serif lg:max-w-[360px]' >
             To contact an electrician call
-            206-555-5555 now!
+            208-603-9127 now!
           </p>
           <button className='flex justify-center items-center bg-main w-[10rem]
               h-8 my-[2%] mx-auto rounded-full text-center transition duration-700

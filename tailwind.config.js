@@ -17,7 +17,7 @@ export default {
     extend: {
       colors: {
         'main': '#e6e6e6',
-        'company':'#6c6d7a',
+        'company':'#48487f',
         'text':'#4d4d4d',
         'bubble':'#4d4d4de6',
         'footer':'#b1b2bd',
