@@ -1,67 +1,50 @@
-import React from 'react'
-import { CgFacebook, CgInstagram } from 'react-icons/cg'
-import { HiEnvelope, HiPhone } from 'react-icons/hi2'
-import { FaLinkedinIn } from "react-icons/fa";
-import { SiGooglemaps } from "react-icons/si";
-import { contactInfo } from '../resources/data';
-
+import React from 'react';
+import { navOptions } from '../resources/data';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
   return (
-    <footer className='bg-footer-bg' > 
-      <h3 className='bg-accent text-text-light text-xl relative top-0 w-full
-      h-20 my-auto text-center leading-[4.8rem]' >Fake Electric</h3>
-      <div className='flex flex-col justify-center sm:flex-row sm:mb-8' >
-          <div className='flex flex-col justify-center' >
-              <h4 className='text-text-light border-b-[2px] border-b-accent
-              max-w-[200px] my-8 mx-4' >Fake Electric</h4>
-              <div className='my-2 mx-4 flex text-footer-text items-center' >
-                  <div className='flex justify-center items-center border border-accent mr-2 w-[35px] h-[35px]' >
-                    <HiPhone className='text-accent h-full w-full p-2' />
-                  </div>
-                  <p>{contactInfo.phone}</p>
-              </div>
-              <div className='my-2 mx-4 flex text-footer-text items-center'>
-                  <div className='flex justify-center items-center border border-accent mr-2 w-[35px] h-[35px]'>
-                    <a href="mailto:bennetthumphrey98@gmail.com">
-                      <HiEnvelope className='text-accent h-full w-full p-2' />
-                    </a>
-                  </div>
-                  <a href={`mailto:${contactInfo.email}`}>
-                    <p>bennetthumphrey98<br/>@gmail.com</p>
-                  </a>
-              </div>
+    <div>
+        <div className='flex flex-col justify-center text-center leading-[1.2]
+                        text-footer-text bg-footer-bg pt-12 px-[1.2rem] pb-2
+                        xsm:flex-row xsm:flex-wrap'>
+          <div className='semi-footer-info'>
+            <h4 className='my-8 mx-4 text-[1.75rem] text-text-light' >Fake Electrical</h4>
+            <p className='text-footer-text' >Office: 250-555-5555</p>
+            <p className='text-footer-text' >Cell: 250-555-5556</p>
+            <p className='text-footer-text' >Cell: 250-555-5557</p>
+            <p className='text-footer-text' >1234 Fake St, Victoria BC V1E 9U4</p>
+            <br/>
+            <p className='text-footer-text' >Electrical Troubleshooting Specialist</p>
+            <p className='text-footer-text' >Emergency Services 24/7 Service</p>
+            <br/>
+            <p className='text-footer-text' >Insured, Bonded, Licensed</p>
           </div>
-          <div className='flex justify-center flex-col' >
-              <h4 className='text-text-light border-b-[2px] border-b-accent
-              max-w-[200px] my-8 mx-4'>Reviews</h4>
-              <div className='flex ml-4 pb-12' >
-                  <a 
-                    href=' '
-                    className='flex justify-center items-center bg-accent ml-[0.2rem] w-[60px] h-[60px]'  >
-                    <SiGooglemaps className='text-gray-300 w-3/5 h-3/5' />
-                  </a>
-                  {/* <div className='flex justify-center items-center bg-accent ml-[0.2rem] w-[60px] h-[60px]' >
-                    <CgFacebook className='text-gray-300 w-3/5 h-3/5' />
-                  </div>
-                  <div className='flex justify-center items-center bg-accent ml-[0.2rem] w-[60px] h-[60px]' >
-                    <FaLinkedinIn className='text-gray-300 w-3/5 h-3/5' />
-                  </div> */}
-              </div>
+          <div className="semi-footer-menu">
+            <h4 className='my-8 mx-4 text-[1.75rem] text-text-light'>Our Services</h4>
+            <ul>
+              {navOptions.map((data, i) => (
+                <li key={i}
+                    className='w-[70%] text-center m-auto group hover:cursor-pointer
+                             border-b border-b-footer-text py-[0.4rem]' >
+                    <Link to={data.href}
+                        className='duration-[0.4s] group-hover:text-accent'>
+                        {data.title}
+                    </Link>
+                </li>
+                ))}
+            </ul>
           </div>
-      </div>
-      <div className='text-black text-[0.7rem] pt-6 pb-2 m-auto bg-accent text-center' >
-          <div className='flex flex-col mb-4' >
-              <p>Website by Bennett Humphrey</p>
-              <a 
-                className='hover:text-white duration-500 hover:text-[0.8rem] hover:translate-y-[-3px]' 
-                href="https://bennetthumphrey.com" target="_blank">
-                <p>bennetthumphrey.com</p>
-              </a>
-          </div>
-          {/* <p>Some copyright company 2022</p> */}
-      </div>
-  </footer>
+        </div>
+        <div className='text-center leading-[1.2] bg-footer-bg pb-6 pt-[3.2rem]' >
+          <p className='text-footer-text' >Website developed by Bennett Humphrey</p>
+          <a href='https://bennetthumphrey.com/' target='_blank' 
+           className='text-footer-text duration-500 hover:text-accent' >
+            Bennetthumphrey.com
+          </a>
+        </div>
+    </div>
   )
 }
 

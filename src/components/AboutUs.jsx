@@ -45,8 +45,9 @@ const AboutUs = () => {
                                   (checkEven(i) ? "":" text-text-light")} >
                         {data.text}
                     </p>
-                    <button className="bg-contact text-text-light w-full h-[2.8rem]
-                                          absolute left-0 right-0 bottom-0">
+                    <button className="bg-contact text-text-light w-full h-[2.8rem] duration-700
+                                          absolute left-0 right-0 bottom-0 group-hover:bg-[#7fad3b]
+                                          group-hover:text-xl">
                       Contact Us
                     </button>
                   </div>

@@ -27,7 +27,7 @@ const Contact = () => {
                             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"/>
                           </fieldset>
                           <input className='my-8 mx-auto text-text-light bg-accent w-[80vw] max-w-[240px] h-14 
-                          lg:my-14 p-2 mb-8 text-center no-underline duration-500 hover:scale-110 hover:rounded-xl' 
+                          lg:my-14 p-2 mb-8 text-center no-underline duration-500 hover:scale-110 hover:cursor-pointer hover:rounded-xl' 
                           type="submit" value="Submit"/>
                         </form>
                       </div>
