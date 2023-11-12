@@ -23,14 +23,14 @@ const Wrapper = ({children}) => {
       <Wrapper>
 
         <Routes>
-          <Route path="/PioneerElectrical/" element={<Home/>} />
-          <Route path="/PioneerElectrical/projects" element={<Projects/>} />
-          <Route path="/PioneerElectrical/residential" element={<SubPage data={subPages.residential} />} />
-          <Route path="/PioneerElectrical/commercial" element={<SubPage data={subPages.commercial} />} />
-          <Route path="/PioneerElectrical/industrial" element={<SubPage data={subPages.industrial} />} />
-          <Route path="/PioneerElectrical/government" element={<SubPage data={subPages.government} />} />
-          <Route path="/PioneerElectrical/contact" element={<Contact />} />
-          <Route path="/PioneerElectrical/projects" element={<Projects />} />
+          <Route path="/Electrical-Site-2-React/" element={<Home/>} />
+          <Route path="/Electrical-Site-2-React/projects" element={<Projects/>} />
+          <Route path="/Electrical-Site-2-React/residential" element={<SubPage data={subPages.residential} />} />
+          <Route path="/Electrical-Site-2-React/commercial" element={<SubPage data={subPages.commercial} />} />
+          <Route path="/Electrical-Site-2-React/industrial" element={<SubPage data={subPages.industrial} />} />
+          <Route path="/Electrical-Site-2-React/government" element={<SubPage data={subPages.government} />} />
+          <Route path="/Electrical-Site-2-React/contact" element={<Contact />} />
+          <Route path="/Electrical-Site-2-React/projects" element={<Projects />} />
         </Routes>
 
       </Wrapper>

@@ -64,37 +64,37 @@ export const subPages = {
 
 export const navOptions = [
     {
-        href: '/PioneerElectrical/',
+        href: '/Electrical-Site-2-React/',
         title: 'Home',
     },
 
     {
-        href: '../PioneerElectrical/residential',
+        href: '../Electrical-Site-2-React/residential',
         title: 'Residential',
     },
 
     {
-        href: '../PioneerElectrical/commercial',
+        href: '../Electrical-Site-2-React/commercial',
         title: 'Commercial',
     },
 
     // {
-    //     href: '../PioneerElectrical/industrial',
+    //     href: '../Electrical-Site-2-React/industrial',
     //     title: 'Industrial',
     // },
 
     // {
-    //     href: '../PioneerElectrical/government',
+    //     href: '../Electrical-Site-2-React/government',
     //     title: 'Government',
     // },
 
     {
-        href: '../PioneerElectrical/contact',
+        href: '../Electrical-Site-2-React/contact',
         title: 'Contact Us',
     },
 
     // {
-    //     href: '../PioneerElectrical/projects',
+    //     href: '../Electrical-Site-2-React/projects',
     //     title: 'Projects',
     // },
 ]
@@ -106,21 +106,21 @@ export const headerSlides = [
     //     //Return JSX for title & text so can change colors?
     //     img: "./imgs/Light-1200.webp",
     //     svg: <HiOutlineLightBulb  />,
-    //     href: '../PioneerElectrical/industrial',
+    //     href: '../Electrical-Site-2-React/industrial',
     //     title: "Lighting Design",
     //     text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
     // },
     {
         img: "./imgs/Bremerton-1000.webp",
         svg: <FiSun />,
-        href: '../PioneerElectrical/residential',
+        href: '../Electrical-Site-2-React/residential',
         title: "Residential Services",
         text: "Service upgrades, renovations, new construction, and more!",
     },
     {
         img: "./imgs/Seattle-1200.webp",
         svg: <FiWifi  />,
-        href: '../PioneerElectrical/commercial',
+        href: '../Electrical-Site-2-React/commercial',
         title: "Commercial Services",
         text: "Data wiring, alarm systems, new construction, and much more!",
     },
@@ -143,19 +143,19 @@ export const aboutUs = [
     // Animations in tailwind.config.cjs
     {
         svg: <IoCheckmark className="h-20 w-20 text-text mx-auto group-hover:animate-checkmark-animation" />,
-        href: "../PioneerElectrical/contact",
+        href: "../Electrical-Site-2-React/contact",
         title: "Quality Guarantee",
         text: "Reliable service is what every customer gets when they have a Pioneer Electrical electrician handling their electrical problems",
     },
     {
         svg: <FiPhoneCall className="h-20 w-20 pt-3 text-accent mx-auto group-hover:animate-phone-animation"  />,
-        href: "../PioneerElectrical/contact",
+        href: "../Electrical-Site-2-React/contact",
         title: "24/7 Service",
         text: "Our technicians are available 24/7 for any emergency calls, helping with all that life can throw at you",
     },
     {
         svg: <HiOutlineShieldCheck className="h-20 w-20 text-text mx-auto group-hover:animate-shield-animation"  />,
-        href: "../PioneerElectrical/contact",
+        href: "../Electrical-Site-2-React/contact",
         title: "Insured, Bonded, Licensed",
         text: "Our licensed electricians come fully equipped to address all your electrical needs.",
     },
