@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     //Call-Now and logo section is 144 px tall, so it gets hidden on scroll due to the top-[-48px]
-    <div className='sticky top-[-94px] z-[100]' >
+    <div className='sticky top-[-95.5px] z-[100]' >
         <div className='flex h-25 flex-col items-center bg-black' >
             {/* <img src="./company-logo-large.webp"
               className='px-4 pb-2 h-[96px] w-[300px] bg-black' /> */}
