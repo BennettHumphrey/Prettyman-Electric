@@ -31,10 +31,11 @@ const AboutUs = () => {
                         bg-fixed bg-[left_0px_top_0px] bg-cover z-0">
           <div className="bg-[#ffffffB3]
                           h-full w-full z-10">
-            <h2 className='py-12 px-4 font-bold text-[24px]' >
+            <h2 className='py-8 px-4 font-bold bg-accent text-main text-[24px]' >
               {aboutUsMain.title}
             </h2>
-            <div className="bg-line h-[2px] w-[35vw] mx-auto mb-12"></div>
+            {/* Line */}
+            {/* <div className="bg-line h-[2px] w-[35vw] mx-auto mb-12"></div> */}
             <p className='font-medium my-12 mx-4 leading-[1.5] text-[1.5rem]' >
               {aboutUsMain.text}
             </p>
