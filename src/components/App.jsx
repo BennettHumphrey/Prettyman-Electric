@@ -22,10 +22,10 @@ const Wrapper = ({children}) => {
       <Wrapper>
 
         <Routes>
-          <Route path="/Electrical-Site-2-React/" element={<Home/>} />
-          <Route path="/Electrical-Site-2-React/residential" element={<SubPage data={subPages.residential} />} />
-          <Route path="/Electrical-Site-2-React/commercial" element={<SubPage data={subPages.commercial} />} />
-          <Route path="/Electrical-Site-2-React/contact" element={<Contact />} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/residential" element={<SubPage data={subPages.residential} />} />
+          <Route path="/commercial" element={<SubPage data={subPages.commercial} />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
       </Wrapper>

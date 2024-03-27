@@ -47,21 +47,21 @@ export const subPages = {
 
 export const navOptions = [
     {
-        href: '/Electrical-Site-2-React/',
+        href: '/',
         title: 'Home',
     },
 
     {
-        href: '../Electrical-Site-2-React/residential',
+        href: '../residential',
         title: 'Residential',
     },
 
     {
-        href: '../Electrical-Site-2-React/commercial',
+        href: '../commercial',
         title: 'Commercial',
     },
     {
-        href: '../Electrical-Site-2-React/contact',
+        href: '../contact',
         title: 'Contact Us',
     },
 ]
@@ -72,21 +72,21 @@ export const headerSlides = [
     {
         img: "./imgs/Vancouver-Sunset.jpg",
         svg: <FiSun />,
-        href: '../Electrical-Site-2-React/residential',
+        href: '../residential',
         title: "Residential Services",
         text: "Service upgrades, renovations, new construction, and more!",
     },
     {
         img: "./imgs/Office-Interior.webp",
         svg: <FiWifi  />,
-        href: '../Electrical-Site-2-React/commercial',
+        href: '../commercial',
         title: "Commercial Services",
         text: "Data wiring, alarm systems, new construction, and much more!",
     },
     {
         img: "./imgs/Lighting-Display.jpg",
         svg: <HiOutlineLightBulb  />,
-        href: '../Electrical-Site-2-React/industrial',
+        href: '../industrial',
         title: "Lighting Design",
         text: "Our electricians have a wealth of experience and knowledge with the latest technology!",
     },
@@ -103,19 +103,19 @@ export const aboutUs = [
     // Animations in tailwind.config.cjs
     {
         svg: <IoCheckmark className="h-20 w-20 text-text mx-auto group-hover:animate-checkmark-animation" />,
-        href: "../Electrical-Site-2-React/contact",
+        href: "../contact",
         title: "Quality Guarantee",
         text: "Each customer receives dependable service when a Fake Electric electrician manages their electrical issues.",
     },
     {
         svg: <HiOutlineShieldCheck className="h-20 w-20 text-accent mx-auto group-hover:animate-shield-animation"  />,
-        href: "../Electrical-Site-2-React/contact",
+        href: "../contact",
         title: "24/7 Service",
         text: "Available around the clock, our technicians are ready for emergency calls, assisting with whatever challenges life may present.",
     },
     {
         svg: <FiPhoneCall className="h-20 w-20 pt-3 text-text mx-auto group-hover:animate-phone-animation"  />,
-        href: "../Electrical-Site-2-React/contact",
+        href: "../contact",
         title: "Insured, Bonded, Licensed",
         text: "Fully equipped, our licensed electricians are prepared to handle all your electrical requirements.",
     },
