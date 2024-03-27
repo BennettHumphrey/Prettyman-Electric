@@ -1,12 +1,27 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { aboutUs, aboutUsMain } from '../resources/data'
 import { Link } from 'react-router-dom'
+import sanityClient from '../../Sanity/sanity'
 
 const AboutUs = () => {
+
+
+  const [test, setTest] = useState('');
+
+  useEffect(() => {
+      const data = sanityClient.fetch(`*[_type == "person"]`)
+      .then(data => JSON.stringify(data))
+      .then(data => setTest(data));
+  }, []);
+
+  
+  useEffect(() => {
+    console.log(`State: ${test}`)
+  }, [test])
   
   const checkEven = num => num % 2 == 0
 
-  console.log(`url base: ${import.meta.env.BASE_URL}`)
+  // console.log(`url base: ${import.meta.env.BASE_URL}`)
 
 
   return (
