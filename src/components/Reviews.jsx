@@ -1,29 +1,33 @@
 import React from 'react'
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { reviews } from '../resources/data';
-import Carousel from './Carousel/Carousel';
-import reviewStyles from './Carousel/ReviewCarousel.module.css';
-import ReviewsButton from './ReviewsButton';
 
 
 const Reviews = () => {
-
-  const carouselOptions = {
-    autoplay: true,
-    autoplayDelay: 6,
-    line: false,
-  }
-
   return (
-    <div className='pb-8 bg-dropdown text-accent' >
-      <h2 className='text-center text-2xl m-8 mt-0 pt-14' >
-      Reviews
-      </h2>
-      <div className="bg-line w-[30vw] min-w-[150px] max-w-[250px] h-px m-auto 
-                  mb-8 md:mb-0"/>
-      <div>
-        <Carousel data={reviews} options={carouselOptions} styles={reviewStyles} />
+    <div className='
+    bg-[url(./imgs/City-Skyline-1200.webp)] 
+    bg-cover bg-center h-[550px]' >
+      <div className='bg-[#00000080] h-full w-full z-10 pb-12' >
+        <h2 className='text-center text-2xl text-text-light mx-8 mb-8 pt-14' >Reviews</h2>
+        <div className='bg-white w-1/4 h-px m-auto mb-5' />
+        {reviews && <Carousel 
+        key={reviews.length}
+        showThumbs={false}
+        showStatus={false}
+        autoplay={true}
+        infiniteLoop={true}
+        className='max-w-[500px] relative m-auto'>
+          {reviews.map((r, i) => (
+            <div key={i} 
+            className='w-full text-text-light py-6 px-10 leading-6'>
+              <p>{r.text}</p>
+              <p className='pb-4 pt-6' >{r.name}</p>
+            </div>
+          ))}
+        </Carousel>}
       </div>
-      <ReviewsButton  />
     </div>
   )
 }

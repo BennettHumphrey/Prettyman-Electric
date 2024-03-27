@@ -124,20 +124,20 @@ export const aboutUs = [
 
 export const reviews = [
     {
-        text: "Connor Mitchell",
-        title: "Exceptional service from Fake Electric! Transformed our home's electrical system seamlessly. Their team is professional, efficient, and trustworthy. Exceeded expectations with their expertise in residential and small commercial work.",
+        name: "Connor Mitchell",
+        text: "Exceptional service from Fake Electric! Transformed our home's electrical system seamlessly. Their team is professional, efficient, and trustworthy. Exceeded expectations with their expertise in residential and small commercial work.",
     },
     {
-        text: "Olivia Lawson",
-        title: "Fake Electric is a game-changer! Outstanding solutions for our small business. The team is knowledgeable, prompt, and their work is top-notch in both residential and small commercial settings. Highly recommend!",
+        name: "Olivia Lawson",
+        text: "Fake Electric is a game-changer! Outstanding solutions for our small business. The team is knowledgeable, prompt, and their work is top-notch in both residential and small commercial settings. Highly recommend!",
     },
     {
-        text: "Brandon Harper",
-        title: "Fake Electric is a gem! Fixed our complex residential wiring issues swiftly. Their expertise, reliability, and fair pricing set them apart. A 5-star electrical wizard for both homes and small businesses!",
+        name: "Brandon Harper",
+        text: "Fake Electric is a gem! Fixed our complex residential wiring issues swiftly. Their expertise, reliability, and fair pricing set them apart. A 5-star electrical wizard for both homes and small businesses!",
     },
     {
-        text: "Zoe Thompson",
-        title: "Fake Electric is phenomenal! Transformed our outdated electrical setup flawlessly. Their team is skilled, professional, and dedicated to customer satisfaction. Impressed with their expertise in residential and small commercial work!",
+        name: "Zoe Thompson",
+        text: "Fake Electric is phenomenal! Transformed our outdated electrical setup flawlessly. Their team is skilled, professional, and dedicated to customer satisfaction. Impressed with their expertise in residential and small commercial work!",
     },
 ]
 
