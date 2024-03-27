@@ -7,7 +7,7 @@ import { reviews } from '../resources/data';
 const Reviews = () => {
   return (
     <div className='
-    bg-[url(./imgs/City-Skyline-1200.webp)] 
+    bg-[url(/imgs/City-Skyline-1200.webp)] 
     bg-cover bg-center h-[550px]' >
       <div className='bg-[#00000080] h-full w-full z-10 pb-12' >
         <h2 className='text-center text-2xl text-text-light mx-8 mb-8 pt-14' >Reviews</h2>
