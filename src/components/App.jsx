@@ -15,7 +15,6 @@ const App = () => {
   const [subPages, setSubPages] = useState();
   const [navOptions, setNavOptions] = useState();
 
-  // TODO: Auto-scroll-up when changing pages
 
   useEffect(() => {
     fetchData(setContactInfo, '*[_type == "contactInfo"][0]');
