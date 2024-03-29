@@ -2,17 +2,33 @@ import React from 'react'
 import Footer from './Footer'
 import Nav from './Nav/Nav'
 import { contactInfo } from '../resources/data'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import { fetchData } from '../functions/fetchData'
 
-const Contact = () => {
+const Contact = ({ contactInfo, navOptions }) => {
+
+  const [hoursOfOperation, setHoursOfOperation] = useState([{hours: "Loading"}, {hours: "Loading"}])
+
+  useEffect(() => {
+    fetchData(setHoursOfOperation, '*[_type == "hoursOfOperation"]');
+  }, []);
+
+  // useEffect(() => {
+  //   console.log(hoursOfOperation);
+  // }, [hoursOfOperation]);
+
+
+
   return (
     <>
-      <Nav  />
+      <Nav contactInfo={contactInfo} navOptions={navOptions} />
       <div className='
       bg-[url(/imgs/Scaffolding-1200.webp)] 
       h-full w-full bg-cover pb-10 sm:pb-16' >
         <div className='w-[95%] sm:w-[80vw] sm:p-12 max-w-[1000px] bg-white/80 relative m-auto
           p-4 top-8 pb-16 rounded-md' >
-            <h2 className='text-center'>Contact Us</h2>
+            <h2 className='text-center text-3xl'>Contact Us</h2>
             <div className='flex flex-col justify-center md:flex-row md:justify-evenly'>
                 <div className='flex justify-center flex-col gap-y-4 text-center mb-8'>
                     <div className='flex flex-col justify-center'>
@@ -37,15 +53,15 @@ const Contact = () => {
                     <h4>Phone</h4>
                     {/* <p>Office: 250-555-5555</p>
                     <p>Cell: 250-555-5556</p> */}
-                    <p>Cell: {contactInfo.phone}</p>
+                    <p>{contactInfo.phone}</p>
                     <h4>Email</h4>
                     <p>{contactInfo.email}</p>
                     <h3 className='underline mt-2' >Hours of Operation</h3>
-                    <p>Mon - Fri: {contactInfo.hours.weekday}</p>
-                    <p>Sat: {contactInfo.hours.sat}</p>
-                    <p>Sun: {contactInfo.hours.sun}</p>
-                    {/* <h3 className='underline mt-2' >Address</h3>
-                    <p>1234 Fake St, Victoria BC V1E 9U4</p> */}
+                    {/* Hours map */}
+                    {hoursOfOperation.map((data, i) => (
+                      <p key={i} >{data.hours}</p>
+                    ))}
+
                 </div>
             </div>
             
@@ -57,7 +73,7 @@ const Contact = () => {
             </div>
         </div>
     </div>
-    <Footer  />
+    <Footer contactInfo={contactInfo} />
   </>
   )
 }

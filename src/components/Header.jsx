@@ -5,6 +5,8 @@ import defaultStyles from './Carousel/Carousel.module.css';
 
 const Header = () => {
 
+  // TODO: pull headers from Sanity
+
   const carouselOptions = {
       autoplay: true,
       autoplayDelay: 8,

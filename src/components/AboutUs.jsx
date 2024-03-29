@@ -1,28 +1,43 @@
-import React, { useEffect, useState } from 'react'
-import { aboutUs, aboutUsMain } from '../resources/data'
-import { Link } from 'react-router-dom'
-import sanityClient from '../../Sanity/sanity'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { aboutUs } from '../resources/data';
+import { fetchData } from '../functions/fetchData';
+
+
+// context.setState((prevState) => ({               ...prevState,               blocksOnFailure: {                 ...prevState.blocksOnFailure,                 ["regexCheck"]: !context.state.blocksOnFailure["regexCheck"]               }             }))
+
+
 
 const AboutUs = () => {
 
+  const [mainAboutUs, setMainAboutUs] = useState({ Body: 'Loading', Title: 'Loading' });
 
-  const [test, setTest] = useState('');
+
+  const [aboutUsContainersData, setAboutUsContainersData] = useState(aboutUs);
+  //Gets Sanity data on mount
+  const [aboutUsContainersSanity, setAboutUsContainersSanity] = useState(undefined);
+
 
   useEffect(() => {
-      const data = sanityClient.fetch(`*[_type == "person"]`)
-      .then(data => JSON.stringify(data))
-      .then(data => setTest(data));
+    fetchData(setMainAboutUs, '*[_type == "mainAboutUs"][0]');
+  }, []);
+  
+  useEffect(() => {
+    fetchData(setAboutUsContainersSanity, '*[_type == "aboutUsContainers"]');
   }, []);
 
-  
   useEffect(() => {
-    console.log(`State: ${test}`)
-  }, [test])
-  
-  const checkEven = num => num % 2 == 0
+    // console.log(`Trigger useEffect to change data`)
 
-  // console.log(`url base: ${import.meta.env.BASE_URL}`)
+    if(aboutUsContainersSanity) (
+    setAboutUsContainersData((prev) => prev.map((data, index) => ({...data, body: aboutUsContainersSanity[index].body, title: aboutUsContainersSanity[index].title}))))
 
+    // console.log(`Containers Data Title: ${JSON.stringify(aboutUsContainersData[0].title)}`)
+    // console.log(`Sanity Data Title: ${JSON.stringify(aboutUsContainersSanity[0].title)}`)
+  }, [aboutUsContainersSanity]);
+
+
+  const checkEven = (num) => num % 2 === 0;
 
   return (
     <div>
@@ -31,35 +46,29 @@ const AboutUs = () => {
                         bg-fixed bg-[left_0px_top_0px] bg-cover z-0">
           <div className="bg-[#ffffffB3]
                           h-full w-full z-10">
-            <h2 className='py-8 px-4 font-bold bg-accent text-main text-[24px]' >
-              {aboutUsMain.title}
+            <h2 className="py-8 px-4 font-bold bg-accent text-main text-[24px]">
+              {mainAboutUs.Title}
             </h2>
-            {/* Line */}
-            {/* <div className="bg-line h-[2px] w-[35vw] mx-auto mb-12"></div> */}
-            <p className='font-medium my-12 mx-4 leading-[1.5] text-[1.5rem]' >
-              {aboutUsMain.text}
+            <p className="font-medium my-12 mx-4 leading-[1.5] text-[1.5rem]">
+              {mainAboutUs.Body}
             </p>
-              <section className="flex flex-col gap-8 pb-20
+            <section className="flex flex-col gap-8 pb-20
                                           xsm:max-w-[450px] xsm:mx-auto
                                           lg:flex-row lg:justify-around lg:my-0 lg:mx-auto">
-            {aboutUs.map((data, i) => (
+              {aboutUsContainersData.map((data, i) => (
                 <Link key={i} className="group" to={data.href}>
-                  <div className={"flex flex-col relative m-auto " + 
-                                  //Even Styles
-                                  (checkEven(i) ? 
-                                  "bg-main w-[80vw] max-w-[280px] min-h-[12rem]\
-                                  lg:min-w-[270px] lg:h-[370px]" :
-                                  //Odd Styles
-                                   "w-[90vw] max-w-[300px] bg-[#333645]\
-                                   lg:min-w-[270px] lg:h-[400px] lg:bottom-[15px]")}>
-                    {/* Styles for data.svg in data.jsx */}
-                    {/* Animations in tailwind.config.cjs */}
+                  <div className={'flex flex-col relative m-auto ' + 
+                                  (checkEven(i)
+                                    ? 'bg-main w-[80vw] max-w-[280px] min-h-[12rem]\
+                                       lg:min-w-[270px] lg:h-[370px]'
+                                    : 'w-[90vw] max-w-[300px] bg-[#333645]\
+                                       lg:min-w-[270px] lg:h-[400px] lg:bottom-[15px]')}>
                     {data.svg}
-                    <h3 className={checkEven(i) ? "":" text-text-light"} >{data.title}</h3>
-                    <p className={"font-medium pt-2 pb-4 mb-12 mt-10 mx-4 px-4 text-base\
-                                  sm:max-2-[450px] sm:flex sm:mx-auto" + 
-                                  (checkEven(i) ? "":" text-text-light")} >
-                        {data.text}
+                    <h3 className={checkEven(i) ? '' : 'text-text-light'}>{data.title}</h3>
+                    <p className={'font-medium pt-2 pb-4 mb-12 mt-10 mx-4 px-4 text-base\
+                                  sm:max-2-[450px] sm:flex sm:mx-auto' + 
+                                  (checkEven(i) ? '' : ' text-text-light')}>
+                      {data.body}
                     </p>
                     <button className="bg-contact text-text-light w-full h-[2.8rem] duration-700
                                           absolute left-0 right-0 bottom-0 group-hover:bg-[#7fad3b]
@@ -68,13 +77,13 @@ const AboutUs = () => {
                     </button>
                   </div>
                 </Link>
-            ))}
-              </section>
+              ))}
+            </section>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

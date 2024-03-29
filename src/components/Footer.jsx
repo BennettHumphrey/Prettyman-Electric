@@ -3,7 +3,23 @@ import { CgFacebook, CgInstagram } from 'react-icons/cg'
 import { HiEnvelope, HiPhone, HiMapPin } from 'react-icons/hi2'
 import { FaLinkedinIn } from "react-icons/fa";
 
-const Footer = () => {
+
+const emailBreak = (email) => {
+  const atIndex = email.indexOf('@');
+
+    const emailBeforeAt = email.substring(0, atIndex);
+    const emailAfterAt = email.substring(atIndex);
+    
+    return (
+      <p>
+        {emailBeforeAt}
+        <br />
+        {emailAfterAt}
+      </p>
+    );
+};
+
+const Footer = ({ contactInfo }) => {
   return (
     <footer className='bg-footer-bg' > 
       <h3 className='bg-accent text-text-light text-xl relative top-0 w-full
@@ -16,13 +32,13 @@ const Footer = () => {
                   <div className='flex justify-center items-center border border-accent mr-2 w-[35px] h-[35px]' >
                     <HiMapPin className='text-accent h-full w-full p-2' />
                   </div>
-                  <p>Fernwood,<br/>Victoria, BC</p>
+                  <p className='text-wrap' >{contactInfo.address}</p>
               </div>
               <div className='my-2 mx-4 flex text-text-light items-center' >
                   <div className='flex justify-center items-center border border-accent mr-2 w-[35px] h-[35px]' >
                     <HiPhone className='text-accent h-full w-full p-2' />
                   </div>
-                  <p>250-555-5555</p>
+                  <p>{contactInfo.phone}</p>
               </div>
               <div className='my-2 mx-4 flex text-text-light items-center 
                             hover:text-orange-400 group duration-700'>
@@ -34,7 +50,7 @@ const Footer = () => {
                     </a>
                   </div>
                   <a href="mailto:Poweronelectric23@gmail.com">
-                    <p>bennetthumphrey98<br/>@gmail.com</p>
+                    {emailBreak(contactInfo.email)}
                   </a>
               </div>
           </div>

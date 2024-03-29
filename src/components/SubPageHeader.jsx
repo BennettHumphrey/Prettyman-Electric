@@ -1,12 +1,23 @@
 import React from 'react'
+import { urlFor } from '../../Sanity/imageBuilder'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 const SubPageHeader = ({data}) => {
 
+  const [backgroundImage, setBackgroundImage] = useState('')
+
+  useEffect(() => {
+    setBackgroundImage(urlFor(data.image))
+  }, [data])
+
+  console.log(`Sub-Page image URL: ${backgroundImage}`)
  
   return (
-    <div className="flex flex-col justify-center text-center z-10
-                          bg-[url(/imgs/Vancouver-Skyline-Cloudy.jpg)] bg-cover bg-bottom
-                          sm:bg-[left_52%]">
+    <div  style={{ backgroundImage: `url(${backgroundImage})` }} 
+    className={`flex flex-col justify-center text-center z-10
+                          bg-cover bg-bottom
+                          sm:bg-[left_52%]`}>
         <div className="h-full w-full bg-[#FFFA] z-20">
             <h1 className='my-8 mx-4 z-30 text-3xl' >{data.headerTitle}</h1>
             <div className="h-px w-[30%] bg-line my-12 mx-auto"/>

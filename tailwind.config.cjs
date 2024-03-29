@@ -12,6 +12,9 @@ module.exports = {
         lg: '976px',
         xl: '1440px',
       },
+
+      // TODO: Pull colors from Sanity
+
       extend: {
         colors: {
           'main': '#f7f7f7',

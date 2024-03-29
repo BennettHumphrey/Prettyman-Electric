@@ -1,5 +1,7 @@
 import { createClient } from 'https://esm.sh/@sanity/client' 
 
+// TODO: hide projectId in .env
+
 export const sanityClient = createClient({
   projectId: '50mhnpl5',
   dataset: 'production',

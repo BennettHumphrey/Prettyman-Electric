@@ -1,10 +1,25 @@
 import React from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { reviews } from '../resources/data';
+import { fetchData } from '../functions/fetchData';
+// import { reviews } from '../resources/data';
 
 
 const Reviews = () => {
+
+  const [reviews, setReviews] = useState([{name: "Loading"}, {name: "Loading"}])
+
+  useEffect(() => {
+    fetchData(setReviews, '*[_type == "reviews"]');
+  }, []);
+
+  // useEffect(() => {
+  //   console.log(reviews);
+  // }, [reviews]);
+
+
   return (
     <div className='
     bg-[url(/imgs/City-Skyline-1200.webp)] 
@@ -22,7 +37,7 @@ const Reviews = () => {
           {reviews.map((r, i) => (
             <div key={i} 
             className='w-full text-text-light py-6 px-10 leading-6'>
-              <p>{r.text}</p>
+              <p>{r.review}</p>
               <p className='pb-4 pt-6' >{r.name}</p>
             </div>
           ))}

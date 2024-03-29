@@ -3,18 +3,21 @@ import Footer from './Footer';
 import Nav from './Nav/Nav';
 import ReviewsButton from './ReviewsButton';
 import SubPageHeader from './SubPageHeader';
-import { contactInfo } from '../resources/data';
+import { useLoaderData } from 'react-router-dom';
+// import { contactInfo } from '../resources/data';
 
-const SubPage = ({ data }) => {
+const SubPage = ({ contactInfo, navOptions }) => {
+
+  const data = useLoaderData();
     
 
   return (
     <div className='bg-main' >
-      <Nav  />
+      <Nav contactInfo={contactInfo} navOptions={navOptions} />
           <SubPageHeader data={data} />
 
 
-          <div className={`${!data.seal && 'sm:flex-col text-center'} sm:flex sm:items-center sm:justify-items-center`}>
+          <div className='sm:flex sm:flex-col text-center sm:items-center sm:justify-items-center'>
           {/* If using data.bodyTitle, change mb-12 to my-12 here and on the line (l20) */}
             <div className="flex flex-col mb-12 mx-auto justify-center">
                 {/* <h2 className='text-center sm:mx-8 text-2xl' >{data.bodyTitle}</h2> */}
@@ -27,20 +30,12 @@ const SubPage = ({ data }) => {
                 </div>
             </div>
               <div className={`flex justify-center flex-col
-                              ${data.seal && 'sm:mr-[5vw] lg:mr-[10vw]'}`}>
-                {data.seal && 
-                <div>
-                  <img className="relative w-[100px] h-[100px] m-auto mt-12"
-                      src="./imgs/partner-logo.svg" alt="Cat"/>
-                  <figcaption className='text-center'>
-                    Seal of Approval
-                  </figcaption>
-                </div>}
+                              `}>
                 <ReviewsButton  />
                 <p className='text-center text-xl my-12' >{contactInfo.phone}</p>
               </div>
           </div>
-      <Footer  />
+      <Footer contactInfo={contactInfo} />
     </div>
   )
 }

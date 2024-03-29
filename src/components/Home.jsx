@@ -3,25 +3,25 @@ import AboutUs from './AboutUs'
 import Header from './Header'
 import Nav from './Nav/Nav'
 import Reviews from './Reviews'
-import PhoneNumbers from './PhoneNumbers'
+// import PhoneNumbers from './PhoneNumbers'
 import RequestQuote from './RequestQuote'
 import Footer from './Footer'
 
 
-const Home = () => {
+const Home = ({ contactInfo, navOptions }) => {
   
 
 
 
   return (
     <div>
-        <Nav  />
+        <Nav contactInfo = {contactInfo} navOptions={navOptions} />
         <Header  />
         {/* <PhoneNumbers  /> */}
         <AboutUs  />
         <RequestQuote  />
         <Reviews  />
-        <Footer />
+        <Footer contactInfo = {contactInfo} />
     </div>
   )
 }

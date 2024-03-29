@@ -1,10 +1,10 @@
 import React from 'react';
-import { useWindowWidth } from '../useWindowWidth';
+import { useWindowWidth } from '../../functions/useWindowWidth';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
-import { contactInfo } from '../../resources/data';
+// import { contactInfo } from '../../resources/data';
 
-const Nav = () => {
+const Nav = ({ contactInfo, navOptions }) => {
 
     const width = useWindowWidth();
 
@@ -14,12 +14,12 @@ const Nav = () => {
         <div className='flex h-25 flex-col items-center bg-black' >
             {/* <img src="./company-logo-large.webp"
               className='px-4 pb-2 h-[96px] w-[300px] bg-black' /> */}
-              <p className='text-6xl text-accent font-bold m-auto' >Fake Electric</p>
+              <p className='text-6xl text-accent text-center font-bold m-auto' >Fake Electric</p>
             <h1 className='text-2xl p-px bg-accent text-text-light w-full text-center' >
               Call us! {contactInfo.phone}
             </h1>
         </div>
-        {width > 1018 ? <DesktopNav  /> : <MobileNav  />}
+        {width > 1018 ? <DesktopNav navOptions={navOptions}  /> : <MobileNav navOptions={navOptions}  />}
     </div>
   )
 }
