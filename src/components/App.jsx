@@ -14,7 +14,9 @@ const App = () => {
   const [contactInfo, setContactInfo] = useState({ email: "Loading", phone: "Loading" });
   const [subPages, setSubPages] = useState();
   const [navOptions, setNavOptions] = useState();
+  const [colors, setColors] = useState();
 
+  // TODO: Refactor everything to use classNames, so I can use dynamic tailwind classes
 
   useEffect(() => {
     fetchData(setContactInfo, '*[_type == "contactInfo"][0]');
@@ -25,7 +27,15 @@ const App = () => {
   }, []);
 
   useEffect(() => {
-    console.log(`subPages data: ${JSON.stringify(subPages)}`)
+    fetchData(setColors, '*[_type == "colors"][0]');
+  }, []);
+
+  useEffect(() => {
+    console.log(`Colors: ${JSON.stringify(colors)}`)
+  }, colors)
+
+  useEffect(() => {
+    // console.log(`subPages data: ${JSON.stringify(subPages)}`)
     subPages && setNavOptions(createNavOptions(subPages))
   }, [subPages])
 
@@ -33,11 +43,11 @@ const App = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home contactInfo={contactInfo} navOptions={navOptions} />,
+    element: <Home colors={colors} contactInfo={contactInfo} navOptions={navOptions} />,
   },
   {
     path: "/subPage/:subPageId",
-    element: <SubPage contactInfo={contactInfo} navOptions={navOptions} />,
+    element: <SubPage colors={colors} contactInfo={contactInfo} navOptions={navOptions} />,
     loader: ({params}) => {
 
       //Filters the array down to just the index that contains a matching page name
@@ -52,7 +62,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-  element: <Contact contactInfo={contactInfo} navOptions={navOptions} />
+  element: <Contact colors={colors} contactInfo={contactInfo} navOptions={navOptions} />
 },
 ]);
 

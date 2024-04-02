@@ -8,20 +8,20 @@ import RequestQuote from './RequestQuote'
 import Footer from './Footer'
 
 
-const Home = ({ contactInfo, navOptions }) => {
+const Home = ({ colors, contactInfo, navOptions }) => {
   
 
 
 
   return (
     <div>
-        <Nav contactInfo = {contactInfo} navOptions={navOptions} />
-        <Header  />
+        <Nav colors={colors} contactInfo = {contactInfo} navOptions={navOptions} />
+        <Header colors={colors}  />
         {/* <PhoneNumbers  /> */}
-        <AboutUs  />
-        <RequestQuote  />
-        <Reviews  />
-        <Footer contactInfo = {contactInfo} />
+        <AboutUs colors={colors}  />
+        <RequestQuote colors={colors}  />
+        <Reviews colors={colors}  />
+        <Footer colors={colors} contactInfo = {contactInfo} />
     </div>
   )
 }

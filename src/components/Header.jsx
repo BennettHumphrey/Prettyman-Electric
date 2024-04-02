@@ -3,20 +3,21 @@ import { headerSlides } from '../resources/data';
 import Carousel from './Carousel/Carousel';
 import defaultStyles from './Carousel/Carousel.module.css';
 
-const Header = () => {
+const Header = ({ colors }) => {
+  
 
-  // TODO: pull headers from Sanity
+
+
 
   const carouselOptions = {
       autoplay: true,
       autoplayDelay: 8,
-      line: true,
-      img: true,
     }
 
   return (
     <div>
-      <Carousel data={headerSlides} options={carouselOptions} styles={defaultStyles} />
+      {/* This carousel is my custom component, the one in the reviews component is from react-responsive-carousel */}
+       <Carousel colors={colors} data={headerSlides} options={carouselOptions} styles={defaultStyles} /> 
     </div>
   )
 }

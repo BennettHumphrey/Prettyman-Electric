@@ -17,15 +17,15 @@ module.exports = {
 
       extend: {
         colors: {
-          'main': '#f7f7f7',
-          'accent': '#8bc34a',
-          'contact': '#8bc34a',
-          'menu': '#7fad3b',
-          'text': '#333645',
-          'text-light': 'white',
+          'main': 'grey',
+          'accent': 'yellow',
+          'contact': 'red',
+          'menu': 'blue',
+          'text': 'green',
+          'text-light': 'pink',
           'dropdown': '#242D37',
           'line': 'black',
-          'footer-bg': '#242D37',
+          'footer-bg': 'purple',
           'footer-text': 'grey',
         },
         height: {
@@ -46,8 +46,8 @@ module.exports = {
           },
           'shield': {
             '0%': {},
-            '40%': { color: '#ffaa06' },
-            '100%': { color: '#8bc34a' },
+            '50%': { transform: 'scale(1.2)' },
+            '100%': { transform: 'scale(1)' },
           },
         },
     },

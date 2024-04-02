@@ -4,7 +4,7 @@ import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
 // import { contactInfo } from '../../resources/data';
 
-const Nav = ({ contactInfo, navOptions }) => {
+const Nav = ({ colors, contactInfo, navOptions }) => {
 
     const width = useWindowWidth();
 
@@ -14,12 +14,14 @@ const Nav = ({ contactInfo, navOptions }) => {
         <div className='flex h-25 flex-col items-center bg-black' >
             {/* <img src="./company-logo-large.webp"
               className='px-4 pb-2 h-[96px] w-[300px] bg-black' /> */}
-              <p className='text-6xl text-accent text-center font-bold m-auto' >Fake Electric</p>
-            <h1 className='text-2xl p-px bg-accent text-text-light w-full text-center' >
+              <p  style={{color: colors?.accent}}
+                className='text-6xl text-center font-bold m-auto' >Fake Electric</p>
+            <h1 style={{backgroundColor: colors?.accent, color: colors?.textLight}} 
+              className='text-2xl p-px w-full text-center' >
               Call us! {contactInfo.phone}
             </h1>
         </div>
-        {width > 1018 ? <DesktopNav navOptions={navOptions}  /> : <MobileNav navOptions={navOptions}  />}
+        {width > 1018 ? <DesktopNav colors={colors} navOptions={navOptions}  /> : <MobileNav colors={colors} navOptions={navOptions}  />}
     </div>
   )
 }

@@ -6,15 +6,15 @@ import SubPageHeader from './SubPageHeader';
 import { useLoaderData } from 'react-router-dom';
 // import { contactInfo } from '../resources/data';
 
-const SubPage = ({ contactInfo, navOptions }) => {
+const SubPage = ({ colors, contactInfo, navOptions }) => {
 
   const data = useLoaderData();
     
 
   return (
-    <div className='bg-main' >
-      <Nav contactInfo={contactInfo} navOptions={navOptions} />
-          <SubPageHeader data={data} />
+    <div style={{backgroundColor: colors?.bgLight}} >
+      <Nav colors={colors} contactInfo={contactInfo} navOptions={navOptions} />
+          <SubPageHeader colors={colors} data={data} />
 
 
           <div className='sm:flex sm:flex-col text-center sm:items-center sm:justify-items-center'>
@@ -31,11 +31,11 @@ const SubPage = ({ contactInfo, navOptions }) => {
             </div>
               <div className={`flex justify-center flex-col
                               `}>
-                <ReviewsButton  />
+                <ReviewsButton colors={colors}  />
                 <p className='text-center text-xl my-12' >{contactInfo.phone}</p>
               </div>
           </div>
-      <Footer contactInfo={contactInfo} />
+      <Footer colors={colors} contactInfo={contactInfo} />
     </div>
   )
 }

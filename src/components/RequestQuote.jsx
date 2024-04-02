@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { fetchData } from '../functions/fetchData';
 import { useState } from 'react';
 
-const RequestQuote = () => {
+const RequestQuote = ({ colors }) => {
 
   const [requestQuote, setRequestQuote] = useState('Loading')
 
@@ -17,13 +17,16 @@ const RequestQuote = () => {
   // }, [requestQuote]);
 
   return (
-    <div className="request-quote bg-accent text-text-light text-center flex 
+    <div style={{backgroundColor: colors?.accent, color: colors?.textLight}}
+      className="request-quote text-center flex 
                     flex-col items-center pb-8">
       <h2 className="pt-8 mx-1 mb-8 text-xl">{requestQuote.title}</h2>
       <Link to="../contact">
-        <button className="w-[80vw] h-12 bg-[#333645] text-text-light 
-                            cursor-pointer transition duration-500 rounded-md 
-                            max-w-[600px] hover:bg-main hover:text-black">
+        <button style={{'--text-light': colors?.textLight,'--bg-light': colors?.bgLight, 
+                        '--bg-dark': colors?.bgDark, '--text-dark': colors?.textDark}}
+          className="w-[80vw] h-12 bg-[--bg-dark] text-[--text-light]
+                            cursor-pointer transition duration-700 rounded-md 
+                            max-w-[600px] hover:bg-[--bg-light] hover:text-[--text-dark]">
           REQUEST A QUOTE
         </button>
       </Link>

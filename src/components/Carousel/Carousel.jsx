@@ -1,118 +1,87 @@
 import React, { useState, useEffect } from 'react';
 import { FaBolt } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { autoplay, goToSlide, nextSlide, prevSlide } from './utils/carouselFunctions';
+import CarouselDots from './Atoms/CarouselDots';
+import CarouselArrows from './Atoms/CarouselArrows';
+import { fetchData } from '../../functions/fetchData';
+import { urlFor } from '../../../Sanity/imageBuilder';
 
-//Import styles from parent
 
-const Carousel = ({ data, options, styles }) => {
+
+const Carousel = ({ colors, options, styles }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [slideCounter, setSlideCounter] = useState(0);
 
-    useEffect(() => {
-        if(options.autoplay) {
-          const interval = setInterval(() => {
-          setSlideCounter((prevSlideCounter) => {
-            const newSlideCounter = prevSlideCounter + 1;
-            
-            if (newSlideCounter >= options.autoplayDelay) {
-              nextSlide();
-              return 0; // Reset slide counter
-            }
-      
-            return newSlideCounter;
-          });
-        }, 1000);
-      
-        return () => {
-          clearInterval(interval);
-        };
-      }
-      }, []);
-      
-      
 
-  const nextSlide = () => {
-    setActiveSlideIndex((prevIndex) => (prevIndex + 1) % data.length);
-    setSlideCounter(0)
-  };
+  const [data, setData] = useState([])
+  
 
-  const prevSlide = () => {
-    setActiveSlideIndex((prevIndex) =>
-      prevIndex === 0 ? data.length - 1 : prevIndex - 1
-    );
-    setSlideCounter(0)
-  };
 
-  const goToSlide = (index) => {
-      setActiveSlideIndex(index);
-      setSlideCounter(0)
-  };
+  useEffect(() => {
+    fetchData(setData, '*[_type == "headerSlides"]');
+  }, []);
 
-//   <div className={`${styles.slides} ${styles.fade} ${
-//     index === activeSlideIndex ? styles.slidesActive : styles.slidesInactive
-//   }`}
-//   key={index}>
-//   <img className={`${styles.img}`} alt={slide.title} src={slide[0]} />
-// </div>
+
+  
+  // useEffect(() => {
+  //   if(data && data.length > 0) {
+  //   console.log(`Raw data svg: ${JSON.stringify(data[0])}`)
+  //   console.log(`urlFor svg: ${urlFor(data[0].svg)}`)}
+  // }, [data]);
+
+
+
+  useEffect(() => {
+    const cleanupAutoplay = autoplay(options, setActiveSlideIndex, setSlideCounter, data);
+
+    return () => {
+        cleanupAutoplay(); // Cleanup function to stop autoplay when component unmounts
+    };
+}, [options, data]);
 
   return (
 
-    <div className={`${styles.slideshowContainer}`}>
-      {  options.onlyImgs ? 
-      //If there are only images
-      data.map((slide, index) => (
-        <div
-          key={index}
-          className={`${styles.slides} ${styles.fade} ${
-            index === activeSlideIndex ? styles.slidesActive : styles.slidesInactive
-          }`}
-        >
-          <img className={`${styles.img}`} alt={slide.title} src={slide} />
-        </div>
-      ))
-      //If there is a full data obj
-      : data.map((slide, index) => (
+
+    //* Structure of color vars in css file:
+    // :root {
+    //   --accent-color: #8bc34a;
+    //   --accent-whitewashed: #e2f0cb;
+    //   --text-color-light: white;
+    // }
+
+    <div style={{'--accent-color': colors?.accent, '--text-color-light': colors?.textLight}}
+      className={`${styles.slideshowContainer}`}>
+      {data.map((slide, index) => (
         <Link
-          to={slide.href}
+          to={slide.link && `./subPage/${slide.link}`}
           key={index}
           className={`${styles.slides} ${styles.fade} ${
             index === activeSlideIndex ? styles.slidesActive : styles.slidesInactive
           }`}
         >
-          {options.img && <img className={`${styles.img}`} alt={slide.title} src={slide.img} />}
+          <img className={`${styles.img}`} alt={slide.title} src={urlFor(slide.image)} />
           <div className={`${styles.overlay}`}>
             <div className={`${styles.icon}`} >
-              {slide.svg}
+              <img src={urlFor(slide.svg)}  />
             </div>
             <p className={`${styles.title}`} >{slide.title}</p>
-              {options.line && 
-                <div className={`${styles.lines}`}>
-                  <div className={`${styles.line}`} />
-                  <FaBolt className={`${styles.linesIcon}`} />
-                  <div className={`${styles.line}`} />
-                </div>
-              }
-            <p className={`${styles.text}`} >{slide.text}</p>
+              <div className={`${styles.lines}`}>
+                <div className={`${styles.line}`} />
+                <FaBolt className={`${styles.linesIcon}`} />
+                <div className={`${styles.line}`} />
+              </div>
+            <p className={`${styles.text}`} >{slide.body}</p>
           </div>
         </Link>
       ))}
-      <p className={`${styles.next}`} onClick={nextSlide}>
-        &#10095;
-      </p>
-      <p className={`${styles.prev}`} onClick={prevSlide}>
-        &#10094;
-      </p>
-      <div className={`${styles.dots}`}>
-        {data.map((x, index) => (
-          <span
-            key={index}
-            className={`${styles.dot} ${
-              index === activeSlideIndex ? styles.active : ''
-            }`}
-            onClick={() => goToSlide(index)}
-          />
-        ))}
-      </div>
+      <CarouselArrows styles={styles} nextSlide={nextSlide} prevSlide={prevSlide}
+        setActiveSlideIndex={setActiveSlideIndex} setSlideCounter={setSlideCounter} data={data} 
+        />
+      <CarouselDots styles={styles} data={data} goToSlide={goToSlide} 
+        activeSlideIndex={activeSlideIndex} setActiveSlideIndex={setActiveSlideIndex} 
+        setSlideCounter={setSlideCounter}
+        />
     </div>
   );
 };

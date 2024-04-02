@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { fetchData } from '../functions/fetchData'
 
-const Contact = ({ contactInfo, navOptions }) => {
+const Contact = ({ colors, contactInfo, navOptions }) => {
 
   const [hoursOfOperation, setHoursOfOperation] = useState([{hours: "Loading"}, {hours: "Loading"}])
 
@@ -18,14 +18,23 @@ const Contact = ({ contactInfo, navOptions }) => {
   //   console.log(hoursOfOperation);
   // }, [hoursOfOperation]);
 
+// console.log(`accent in Contact.jsx: ${colors?.accent}`)
+
+  // const colorTest = `hover:text-[${colors?.accent}]`
+
+
+  
+
+
 
 
   return (
     <>
-      <Nav contactInfo={contactInfo} navOptions={navOptions} />
+      <Nav colors={colors} contactInfo={contactInfo} navOptions={navOptions} />
       <div className='
       bg-[url(/imgs/Scaffolding-1200.webp)] 
-      h-full w-full bg-cover pb-10 sm:pb-16' >
+      h-full w-full bg-cover pb-10 sm:pb-16' 
+      style={{color: colors?.textDark}}>
         <div className='w-[95%] sm:w-[80vw] sm:p-12 max-w-[1000px] bg-white/80 relative m-auto
           p-4 top-8 pb-16 rounded-md' >
             <h2 className='text-center text-3xl'>Contact Us</h2>
@@ -42,7 +51,8 @@ const Contact = ({ contactInfo, navOptions }) => {
                             <textarea className='p-1 border-black border rounded-sm' rows="5" name="message" id="message" placeholder="What can we do for you?" required=""/>
                             <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"/>
                           </fieldset>
-                          <input className='my-8 mx-auto text-text-light bg-accent w-[80vw] max-w-[240px] h-14 
+                          <input style={{color: colors?.textLight, backgroundColor: colors?.accent}}
+                          className='my-8 mx-auto w-[80vw] max-w-[240px] h-14 
                           lg:my-14 p-2 mb-8 text-center no-underline duration-500 hover:scale-110 hover:cursor-pointer hover:rounded-xl' 
                           type="submit" value="Submit"/>
                         </form>
@@ -56,7 +66,7 @@ const Contact = ({ contactInfo, navOptions }) => {
                     <p>{contactInfo.phone}</p>
                     <h4>Email</h4>
                     <p>{contactInfo.email}</p>
-                    <h3 className='underline mt-2' >Hours of Operation</h3>
+                    <h3 className={`underline mt-2`} >Hours of Operation</h3>
                     {/* Hours map */}
                     {hoursOfOperation.map((data, i) => (
                       <p key={i} >{data.hours}</p>
@@ -65,7 +75,8 @@ const Contact = ({ contactInfo, navOptions }) => {
                 </div>
             </div>
             
-            <div className='hover:cursor-pointer text-text-light bg-accent w-[80vw] max-w-[240px] h-14 my-2 mx-auto p-2 mb-8 text-center no-underline duration-500 hover:scale-110 hover:rounded-xl'>
+            <div style={{color: colors?.textLight, backgroundColor: colors?.accent}} 
+            className='hover:cursor-pointer w-[80vw] max-w-[240px] h-14 my-2 mx-auto p-2 mb-8 text-center no-underline duration-500 hover:scale-110 hover:rounded-xl'>
               <div  >
                   <p className='text-xs m-auto'>CALL NOW FOR A FREE QUOTE</p>
                   <h5 className='text-xl'>{contactInfo.phone}</h5>
@@ -73,7 +84,7 @@ const Contact = ({ contactInfo, navOptions }) => {
             </div>
         </div>
     </div>
-    <Footer contactInfo={contactInfo} />
+    <Footer colors={colors} contactInfo={contactInfo} />
   </>
   )
 }

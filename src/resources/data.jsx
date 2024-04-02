@@ -17,21 +17,21 @@ import { IoCheckmark } from "react-icons/io5";
 
 export const headerSlides = [
     {
-        img: "./imgs/Vancouver-Sunset.jpg",
+        title: "Residential Services",
+        image: "./imgs/Vancouver-Sunset.jpg",
         svg: <FiSun />,
         href: '../residential',
-        title: "Residential Services",
         text: "Service upgrades, renovations, new construction, and more!",
     },
     {
-        img: "./imgs/Office-Interior.webp",
+        image: "./imgs/Office-Interior.webp",
         svg: <FiWifi  />,
         href: '../commercial',
         title: "Commercial Services",
         text: "Data wiring, alarm systems, new construction, and much more!",
     },
     {
-        img: "./imgs/Lighting-Display.jpg",
+        image: "./imgs/Lighting-Display.jpg",
         svg: <HiOutlineLightBulb  />,
         href: '../industrial',
         title: "Lighting Design",
@@ -49,19 +49,19 @@ export const headerSlides = [
 export const aboutUs = [
     // Animations in tailwind.config.cjs
     {
-        svg: <IoCheckmark className="h-20 w-20 text-text mx-auto group-hover:animate-checkmark-animation" />,
+        svg: <IoCheckmark className="h-20 w-20 text-[--text-dark] mx-auto group-hover:animate-checkmark-animation" />,
         href: "../contact",
         title: "Loading",
         body: "Loading",
     },
     {
-        svg: <HiOutlineShieldCheck className="h-20 w-20 text-accent mx-auto group-hover:animate-shield-animation"  />,
+        svg: <HiOutlineShieldCheck className="h-20 w-20 text-[--text-light] mx-auto group-hover:animate-shield-animation"  />,
         href: "../contact",
         title: "Loading",
         body: "Loading",
     },
     {
-        svg: <FiPhoneCall className="h-20 w-20 pt-3 text-text mx-auto group-hover:animate-phone-animation"  />,
+        svg: <FiPhoneCall className="h-20 w-20 pt-3 text-[--text-dark] mx-auto group-hover:animate-phone-animation"  />,
         href: "../contact",
         title: "Loading",
         body: "Loading",
