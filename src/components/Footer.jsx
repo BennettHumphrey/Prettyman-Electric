@@ -29,12 +29,12 @@ const Footer = ({ colors, contactInfo }) => {
     <footer style={{backgroundColor: colors?.bgDark}}> 
       <h3 style={{backgroundColor: colors?.accent, color: colors?.textLight}}
         className='text-xl relative top-0 w-full
-      h-20 my-auto text-center leading-[4.8rem]' >Fake Electric</h3>
+      h-20 my-auto text-center leading-[4.8rem]' >Prettyman Electric</h3>
       <div className='flex flex-col justify-center sm:flex-row sm:mb-8' >
           <div className='flex flex-col justify-center' >
               <h4 style={{borderBottomColor: colors?.accent, color: colors?.textLight}} 
                 className=' font-bold border-b-[2px]
-              max-w-[200px] mt-8 mx-4' >Fake Electric LLC</h4>
+              max-w-[200px] mt-8 mx-4' >Prettyman Electric LLC</h4>
               <div style={{color: colors?.textLight}}
                 className='my-2 mx-4 flex items-center' >
                   <div style={{borderColor: colors?.textLight, color: colors?.textLight}}
@@ -82,7 +82,7 @@ const Footer = ({ colors, contactInfo }) => {
           Social Media
         </h4>
         <div className='flex ml-4 pb-12'>
-          <a
+          {/* <a
             style={{ '--bg': colors?.accent, '--hover-bg': colors?.bgLight }}
             className='flex justify-center bg-[--bg] items-center ml-[0.2rem] w-[60px] h-[60px] rounded-xl
                         duration-700 hover:cursor-pointer 
@@ -92,7 +92,7 @@ const Footer = ({ colors, contactInfo }) => {
               style={{ '--hover-color': colors?.accent }}
               className={`w-3/5 h-3/5 duration-1000 group-hover:text-[--hover-color]`}
             />
-          </a>
+          </a> */}
           <a
             style={{ '--bg': colors?.accent, '--hover-bg': colors?.bgLight }}
             className='flex justify-center bg-[--bg] items-center ml-[0.2rem] w-[60px] h-[60px] rounded-xl
@@ -104,7 +104,7 @@ const Footer = ({ colors, contactInfo }) => {
               className={`w-3/5 h-3/5 duration-1000 group-hover:text-[--hover-color]`}
             />
           </a>
-          <a
+          {/* <a
             style={{ '--bg': colors?.accent, '--hover-bg': colors?.bgLight }}
             className='flex justify-center bg-[--bg] items-center ml-[0.2rem] w-[60px] h-[60px] rounded-xl
                         duration-700 hover:cursor-pointer 
@@ -114,7 +114,7 @@ const Footer = ({ colors, contactInfo }) => {
               style={{ '--hover-color': colors?.accent }}
               className={`w-3/5 h-3/5 duration-1000 group-hover:text-[--hover-color]`}
             />
-          </a>
+          </a> */}
         </div>
       </div>
 

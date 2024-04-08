@@ -3,7 +3,7 @@ import { defineField, defineType } from "sanity";
 
 export const reviews = defineType({
     name: 'reviews',
-    title: 'About Us Containers (2-10)',
+    title: 'Reviews (2-10)',
     type: 'document',
     fields: [
       defineField({

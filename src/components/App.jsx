@@ -16,7 +16,7 @@ const App = () => {
   const [navOptions, setNavOptions] = useState();
   const [colors, setColors] = useState();
 
-  // TODO: Refactor everything to use classNames, so I can use dynamic tailwind classes
+
 
   useEffect(() => {
     fetchData(setContactInfo, '*[_type == "contactInfo"][0]');

@@ -1,7 +1,7 @@
 export const createNavOptions = (arr) => {
 
     //Creates the subPages section, with a title and an href
-    const subPages = arr.map((data) => ({title: data.pageTitle, href: `../subPage/${data.pageTitle}`}))
+    const subPages = arr.map((data) => ({title: data.pageTitle, href: `/subPage/${data.pageTitle}`}))
 
     // console.log(`subPages: ${JSON.stringify(subPages)}`)
 
@@ -21,3 +21,5 @@ export const createNavOptions = (arr) => {
     // console.log(`navOptions: ${JSON.stringify(navOptionsArray)}`)
     return navOptionsArray
   } 
+
+
